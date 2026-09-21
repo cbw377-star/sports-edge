@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#172033"><link rel="manifest" href="manifest.webmanifest">
+<title>SPORTS EDGE</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f7;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;color:#172033}
+.app{max-width:480px;margin:auto;min-height:100vh;background:#f8f9fc}.head{background:#172033;color:#fff;padding:20px;border-radius:0 0 25px 25px}
+.logo{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#fff;color:#172033;font-weight:900;margin-right:10px}.title{display:inline-block;vertical-align:top;padding-top:4px;font-weight:900}.sub{display:block;font-size:10px;color:#bdc7d6;margin-top:4px}
+main{padding:13px}.card{background:#fff;border:1px solid #e2e6ed;border-radius:17px;padding:15px;margin-bottom:11px;box-shadow:0 5px 16px #1720330a}h3{font-size:14px;margin:0 0 12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+input,select{width:100%;padding:11px;border:1px solid #dce2ea;border-radius:10px;font-size:12px;background:#fff}button{border:0;border-radius:11px;padding:11px;font-weight:900;font-size:12px}.primary{width:100%;margin-top:9px;background:#4e55e8;color:#fff}.dark{background:#172033;color:#fff;width:100%;margin-top:8px}
+.result{margin-top:10px;background:#f0f2ff;border-radius:12px;padding:12px;font-size:11px;line-height:1.7}.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{background:#eef0ff;color:#4e55e8;padding:8px 9px;font-size:10px}
+.small{font-size:10px;color:#7c8595;line-height:1.5}.bar{height:7px;background:#e9edf3;border-radius:9px;margin:5px 0 8px;overflow:hidden}.fill{height:100%;background:#4e55e8}
+.event{padding:11px 0;border-bottom:1px solid #edf0f4}.event:last-child{border:0}.teams{display:flex;justify-content:space-between;text-align:center;align-items:center;font-size:11px;font-weight:900}.teams div{width:40%}.teams span{width:20%;color:#8a93a2}.odds{font-size:10px;color:#667085;margin-top:7px}
+.status{float:right;background:#21a56f;color:#fff;padding:5px 8px;border-radius:15px;font-size:9px}
+footer{text-align:center;color:#99a1af;font-size:9px;padding:12px 0 25px}
+</style></head>
+<body><div class="app">
+<header class="head"><span class="logo">SE</span><span class="title">SPORTS EDGE</span><span class="status">MOBILE</span><span class="sub">경기 분석 · 배당 분석 · 조합기</span></header>
+<main>
+<section class="card"><h3>① 경기 입력</h3><div class="grid">
+<input id="home" placeholder="홈 팀"><input id="away" placeholder="원정 팀">
+<input id="h" type="number" step=".01" placeholder="승패 홈 배당"><input id="a" type="number" step=".01" placeholder="승패 원정 배당">
+<input id="handicap" placeholder="핸디 기준 예: -1.5"><input id="total" placeholder="언오버 기준 예: 2.5">
+<input id="hh" type="number" step=".01" placeholder="핸디 홈 배당"><input id="ha" type="number" step=".01" placeholder="핸디 원정 배당">
+<input id="over" type="number" step=".01" placeholder="오버 배당"><input id="under" type="number" step=".01" placeholder="언더 배당">
+</div><button class="primary" onclick="analyze()">전체 분석</button><div class="result" id="result">배당을 입력하면 자동으로 분석합니다.</div></section>
+
+<section class="card"><h3>② 조합기</h3><div class="chips">
+<button class="chip" onclick="pick('승패 홈','h')">+ 승패 홈</button><button class="chip" onclick="pick('승패 원정','a')">+ 승패 원정</button>
+<button class="chip" onclick="pick('핸디 홈','hh')">+ 핸디 홈</button><button class="chip" onclick="pick('핸디 원정','ha')">+ 핸디 원정</button>
+<button class="chip" onclick="pick('오버','over')">+ 오버</button><button class="chip" onclick="pick('언더','under')">+ 언더</button>
+</div><div class="result" id="combo">선택한 조합이 없습니다.</div><button class="dark" onclick="picks=[];render()">조합 초기화</button></section>
+
+<section class="card"><h3>③ 실제 배당 불러오기</h3><input id="api" placeholder="The Odds API Key"><select id="sport" style="margin-top:8px">
+<option value="soccer_korea_k_league_1">K리그1</option><option value="baseball_mlb">MLB</option><option value="basketball_nba">NBA</option><option value="soccer_epl">EPL</option></select>
+<button class="primary" onclick="saveApi()">API 저장</button><button class="dark" style="background:#1d8d66" onclick="getOdds()">실제 배당 가져오기</button>
+<div class="small" style="margin-top:8px">API 키가 있으면 경기와 승패·핸디캡·언더오버 배당을 가져와 입력창에 넣을 수 있습니다.</div><div id="events" style="margin-top:8px"></div></section>
+</main><footer>통계 참고용 분석 도구이며 경기 결과를 보장하지 않습니다.</footer></div>
+<script>
+let picks=[];const $=id=>document.getElementById(id);
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
+try{let x=JSON.parse(localStorage.getItem('se'));if(x){$('api').value=x.api||'';$('sport').value=x.sport||$('sport').value}}catch(e){}
+function market(a,b){a=+a;b=+b;if(!(a>1&&b>1))return null;let x=1/a,y=1/b,s=x+y;return [x/s*100,y/s*100,(s-1)*100]}
+function line(t,a,b,n1,n2){let m=market(a,b);return m?`<b>${t}</b><br>${n1} <b>${(+a).toFixed(2)}</b> → ${m[0].toFixed(1)}%　${n2} <b>${(+b).toFixed(2)}</b> → ${m[1].toFixed(1)}%<br><span class="small">마진 ${m[2].toFixed(1)}%</span><div class="bar"><div class="fill" style="width:${m[0]}%"></div></div>`:`<b>${t}</b> · 배당 입력 필요`}
+function analyze(){let H=$('home').value||'홈',A=$('away').value||'원정';$('result').innerHTML='<b>'+H+' vs '+A+'</b><br>'+line('승패',$('h').value,$('a').value,H,A)+'<br>'+line('핸디 '+($('handicap').value||''),$('hh').value,$('ha').value,H,A)+'<br>'+line('언더오버 '+($('total').value||''),$('over').value,$('under').value,'오버','언더');render()}
+function pick(name,id){let v=+$ (id).value;if(!(v>1)){alert('먼저 '+name+' 배당을 입력하세요.');return}if(!picks.some(x=>x.id===id))picks.push({name,id,v});render()}
+function render(){if(!picks.length){$('combo').textContent='선택한 조합이 없습니다.';return}let t=picks.reduce((x,y)=>x*y.v,1);$('combo').innerHTML=picks.map((x,i)=>`${i+1}. ${x.name} @ ${x.v.toFixed(2)}`).join('<br>')+'<hr>조합배당 <b>'+t.toFixed(2)+'</b><br>단순 역수 기준 암시확률 <b>'+(100/t).toFixed(1)+'%</b>'}
+function saveApi(){localStorage.setItem('se',JSON.stringify({api:$('api').value.trim(),sport:$('sport').value}));alert('저장했습니다.')}
+async function getOdds(){let k=$('api').value.trim();if(!k){alert('API Key를 입력하세요.');return}$('events').innerHTML='<div class="small">배당을 가져오는 중...</div>';try{let u=`https://api.the-odds-api.com/v4/sports/${encodeURIComponent($('sport').value)}/odds/?apiKey=${encodeURIComponent(k)}&regions=us&markets=h2h,spreads,totals&oddsFormat=decimal`;let r=await fetch(u);if(!r.ok)throw Error('HTTP '+r.status);let d=await r.json();window.ev=d;$('events').innerHTML=d.slice(0,10).map((e,i)=>`<div class="event"><div class="teams"><div>${e.home_team}</div><span>VS</span><div>${e.away_team}</div></div><div class="odds">${new Date(e.commence_time).toLocaleString('ko-KR')}</div><button class="primary" onclick="use(${i})">이 경기 입력</button></div>`).join('')||'경기가 없습니다.'}catch(e){$('events').innerHTML='<div class="small">API 오류: '+e.message+'</div>'}}
+function use(i){let e=window.ev[i];$('home').value=e.home_team;$('away').value=e.away_team;let h,s,t;for(let b of e.bookmakers||[])for(let m of b.markets||[]){if(m.key==='h2h'&&!h)h=m;if(m.key==='spreads'&&!s)s=m;if(m.key==='totals'&&!t)t=m}let f=(m,n)=>m?.outcomes?.find(o=>o.name===n);let H=f(h,e.home_team),A=f(h,e.away_team),HH=f(s,e.home_team),HA=f(s,e.away_team),O=t?.outcomes?.find(o=>o.name==='Over'),U=t?.outcomes?.find(o=>o.name==='Under');if(H)$('h').value=H.price;if(A)$('a').value=A.price;if(HH)$('hh').value=HH.price;if(HA)$('ha').value=HA.price;if(O){$('over').value=O.price;$('total').value=O.point}if(U)$('under').value=U.price;analyze();scrollTo({top:0,behavior:'smooth'})}
+</script></body></html>
