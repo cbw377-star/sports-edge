@@ -38,8 +38,8 @@ input,select{width:100%;background:#0c1119;color:#f5f7fb;border:1px solid #303c4
   </div>
 
   <div class="card">
-    <div class="row"><b>오늘의 경기</b><span class="badge" id="status">DEMO</span></div>
-    <div class="note" style="margin-top:6px">현재는 안전한 정적 웹앱입니다. 실제 경기/배당은 별도 서버 연결 후 자동으로 표시됩니다.</div>
+    <div class="row"><b>오늘의 경기</b><span class="badge" id="status">연결 중</span></div>
+    <div class="note" style="margin-top:6px" id="sourceNote">The Odds API 데이터를 GitHub Actions로 주기적으로 가져옵니다.</div>
   </div>
 
   <div id="matches"></div>
@@ -72,22 +72,51 @@ input,select{width:100%;background:#0c1119;color:#f5f7fb;border:1px solid #303c4
 </div>
 
 <script>
-const data={
+const demoData={
  soccer:[
-  {l:"EPL",h:"홈팀 A",a:"원정팀 A",t:"오늘 20:00",od:[1.72,3.65,4.80],s:"2 - 1",p:[.54,.25,.21]},
-  {l:"EPL",h:"홈팀 B",a:"원정팀 B",t:"오늘 22:30",od:[2.10,3.30,3.20],s:"1 - 1",p:[.42,.29,.29]}
+  {l:"EPL",h:"데모 홈팀",a:"데모 원정팀",t:"데모",od:[1.72,3.65,4.80],s:"2 - 1",p:[.54,.25,.21]}
  ],
  baseball:[
-  {l:"KBO",h:"홈팀 A",a:"원정팀 A",t:"오늘 18:30",od:[1.72,null,2.08],s:"5 - 4",p:[.57,0,.43]},
-  {l:"KBO",h:"홈팀 B",a:"원정팀 B",t:"오늘 18:30",od:[2.05,null,1.76],s:"3 - 5",p:[.46,0,.54]}
+  {l:"KBO",h:"데모 홈팀",a:"데모 원정팀",t:"데모",od:[1.72,null,2.08],s:"5 - 4",p:[.57,0,.43]}
  ],
  basketball:[
-  {l:"NBA",h:"홈팀 A",a:"원정팀 A",t:"내일 09:00",od:[1.80,null,2.02],s:"112 - 108",p:[.56,0,.44]},
-  {l:"NBA",h:"홈팀 B",a:"원정팀 B",t:"내일 11:30",od:[2.15,null,1.70],s:"105 - 110",p:[.45,0,.55]}
+  {l:"NBA",h:"데모 홈팀",a:"데모 원정팀",t:"데모",od:[1.80,null,2.02],s:"112 - 108",p:[.56,0,.44]}
  ]};
+let data=demoData;
 let sport="soccer";
 
 function pct(x){return (x*100).toFixed(1)+"%"}
+function normalizeOdds(m){
+ const names=sport==="soccer"?[m.h,"Draw",m.a]:[m.h,m.a];
+ const vals=names.map(n=>m.odds?.[n]).map(v=>typeof v==="number"&&v>1?1/v:0);
+ const z=vals.reduce((a,b)=>a+b,0);
+ return z?vals.map(v=>v/z):sport==="soccer"?[.333,.334,.333]:[.5,0,.5];
+}
+async function loadLive(){
+ try{
+  const r=await fetch("data/odds.json?ts="+Date.now(),{cache:"no-store"});
+  if(!r.ok) throw new Error("data");
+  const j=await r.json();
+  const mapped={};
+  for(const key of ["soccer","baseball","basketball"]){
+   mapped[key]=(j.sports?.[key]||[]).map(e=>{
+    const o=e.odds||{}; const p=sport==="soccer"?[o[e.home],o.Draw,o[e.away]]:[o[e.home],0,o[e.away]];
+    const vals=p.map(v=>typeof v==="number"&&v>1?1/v:0), z=vals.reduce((a,b)=>a+b,0);
+    const pp=z?vals.map(v=>v/z):(sport==="soccer"?[.333,.334,.333]:[.5,0,.5]);
+    return {l:e.league,h:e.home,a:e.away,t:e.start?new Date(e.start).toLocaleString("ko-KR",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}):"",od:[o[e.home]||null,o.Draw||null,o[e.away]||null],s:"시장기반",p:pp,raw:e};
+   });
+  }
+  data=mapped;
+  document.getElementById("status").textContent="실데이터";
+  document.getElementById("sourceNote").textContent="The Odds API · GitHub Actions 자동 갱신 데이터입니다. 마지막 갱신: "+(j.updated_at?new Date(j.updated_at).toLocaleString("ko-KR"):"확인 중");
+  render();
+ }catch(e){
+  document.getElementById("status").textContent="데모";
+  document.getElementById("sourceNote").textContent="실데이터 파일을 아직 불러오지 못했습니다. Actions 실행 후 자동으로 표시됩니다.";
+  render();
+ }
+}
+
 function render(){
  const box=document.getElementById("matches");box.innerHTML="";
  data[sport].forEach((m,i)=>{
@@ -112,7 +141,7 @@ function detail(i){
  document.getElementById("detail").className="card";
  document.getElementById("detail").innerHTML=`<div class="row"><b>AI 상세 분석</b><span class="badge">${m.l}</span></div>
  <div class="score">${m.s}</div>${rows}
- <div class="note">최근 폼·공격/수비 지표를 연결할 경우 이 화면에 실제 모델 결과를 표시할 수 있습니다.</div>
+ <div class="note">현재 확률은 실제 배당의 암시확률을 정규화한 시장 기반 참고값입니다. 경기 결과를 보장하지 않습니다.</div>
  <button class="btn dark" onclick="document.getElementById('detail').className='hidden'">닫기</button>`;
  document.getElementById("detail").scrollIntoView({behavior:"smooth"});
 }
@@ -133,6 +162,7 @@ document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));b.classList.add("on");sport=b.dataset.s;render()
 });
 render();
+loadLive();
 </script>
 </body>
 </html>
