@@ -1,0 +1,97 @@
+name: Update Sports Odds
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch EPL KBO NBA odds
+        shell: python
+        run: |
+          import json, os, urllib.parse, urllib.request
+          from datetime import datetime, timezone
+
+          key = os.environ.get('ODDS_API_KEY', '')
+          if not key:
+              raise SystemExit('ODDS_API_KEY secret is missing')
+
+          sports = {
+              'soccer': ('soccer_epl', 'EPL'),
+              'baseball': ('baseball_kbo', 'KBO'),
+              'basketball': ('basketball_nba', 'NBA'),
+          }
+
+          out = {
+              'updated_at': datetime.now(timezone.utc).isoformat(),
+              'source': 'The Odds API',
+              'region': 'us',
+              'sports': {}
+          }
+
+          for group, (sport_key, title) in sports.items():
+              params = urllib.parse.urlencode({
+                  'apiKey': key,
+                  'regions': 'us',
+                  'markets': 'h2h',
+                  'oddsFormat': 'decimal'
+              })
+              url = f'https://api.the-odds-api.com/v4/sports/{sport_key}/odds?{params}'
+              req = urllib.request.Request(url, headers={'User-Agent': 'SPORTS-EDGE/1.0'})
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      raw = json.loads(r.read().decode('utf-8'))
+              except Exception as e:
+                  print(f'{sport_key}: fetch failed: {e}')
+                  raw = []
+
+              events = []
+              for ev in raw if isinstance(raw, list) else []:
+                  best = {}
+                  for bm in ev.get('bookmakers', []):
+                      for market in bm.get('markets', []):
+                          if market.get('key') != 'h2h':
+                              continue
+                          for o in market.get('outcomes', []):
+                              name = o.get('name')
+                              price = o.get('price')
+                              if name and isinstance(price, (int, float)) and price > 1:
+                                  best.setdefault(name, []).append(float(price))
+
+                  avg = {name: sum(vals)/len(vals) for name, vals in best.items()}
+                  events.append({
+                      'id': ev.get('id'),
+                      'league': title,
+                      'sport_key': sport_key,
+                      'home': ev.get('home_team'),
+                      'away': ev.get('away_team'),
+                      'start': ev.get('commence_time'),
+                      'odds': avg,
+                  })
+
+              out['sports'][group] = events
+
+          os.makedirs('data', exist_ok=True)
+          with open('data/odds.json', 'w', encoding='utf-8') as f:
+              json.dump(out, f, ensure_ascii=False, indent=2)
+          print('Updated data/odds.json')
+
+      - name: Commit updated data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/odds.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update sports odds data"
+          git push
