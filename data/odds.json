@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T09:04:32.544056+00:00",
+  "updated_at": "2026-09-22T12:35:06.287599+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,8 +12,8 @@
         "away": "Leeds United",
         "start": "2026-10-10T11:30:00Z",
         "odds": {
-          "Arsenal": 1.347777777777778,
-          "Leeds United": 8.100000000000001,
+          "Arsenal": 1.3544444444444446,
+          "Leeds United": 8.044444444444444,
           "Draw": 5.0488888888888885
         }
       },
@@ -39,7 +39,7 @@
         "start": "2026-10-10T14:00:00Z",
         "odds": {
           "Bournemouth": 3.816666666666667,
-          "Chelsea": 1.7833333333333334,
+          "Chelsea": 1.7855555555555556,
           "Draw": 4.055555555555555
         }
       },
@@ -64,9 +64,9 @@
         "away": "Fulham",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Fulham": 2.52,
-          "Ipswich Town": 2.638888888888889,
-          "Draw": 3.5066666666666664
+          "Fulham": 2.511111111111111,
+          "Ipswich Town": 2.618888888888889,
+          "Draw": 3.477777777777778
         }
       },
       {
@@ -116,8 +116,8 @@
         "away": "Manchester City",
         "start": "2026-10-11T15:30:00Z",
         "odds": {
-          "Liverpool": 2.74,
-          "Manchester City": 2.368888888888889,
+          "Liverpool": 2.738888888888889,
+          "Manchester City": 2.371111111111111,
           "Draw": 3.6277777777777778
         }
       },
@@ -194,7 +194,7 @@
         "away": "Aston Villa",
         "start": "2026-10-17T16:30:00Z",
         "odds": {
-          "Aston Villa": 3.184,
+          "Aston Villa": 3.164,
           "Newcastle United": 2.072,
           "Draw": 3.7399999999999998
         }
@@ -207,9 +207,9 @@
         "away": "Sunderland",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Bournemouth": 1.932,
-          "Sunderland": 3.65,
-          "Draw": 3.6060000000000003
+          "Bournemouth": 1.936,
+          "Sunderland": 3.6420000000000003,
+          "Draw": 3.6020000000000003
         }
       },
       {
@@ -221,7 +221,7 @@
         "start": "2026-10-18T13:00:00Z",
         "odds": {
           "Brighton and Hove Albion": 1.524,
-          "Crystal Palace": 5.35,
+          "Crystal Palace": 5.390000000000001,
           "Draw": 4.4399999999999995
         }
       },
@@ -267,30 +267,6 @@
     ],
     "baseball": [
       {
-        "id": "5ba47fd293fdf39b0ddd5b4163a78f60",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Kiwoom Heroes",
-        "away": "Doosan Bears",
-        "start": "2026-09-22T09:30:00Z",
-        "odds": {
-          "Doosan Bears": 1.3812499999999999,
-          "Kiwoom Heroes": 3.0225
-        }
-      },
-      {
-        "id": "303dcd32488274d8032c2084aadcf99f",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Hanwha Eagles",
-        "away": "Lotte Giants",
-        "start": "2026-09-22T09:30:00Z",
-        "odds": {
-          "Hanwha Eagles": 1.63875,
-          "Lotte Giants": 2.265
-        }
-      },
-      {
         "id": "0a32868adfbbb959e4a229111a36788a",
         "league": "KBO",
         "sport_key": "baseball_kbo",
@@ -298,8 +274,8 @@
         "away": "KT Wiz",
         "start": "2026-09-22T09:30:00Z",
         "odds": {
-          "KT Wiz": 2.1662500000000002,
-          "SSG Landers": 1.6925
+          "KT Wiz": 1.0525,
+          "SSG Landers": 8.875
         }
       },
       {
@@ -310,8 +286,20 @@
         "away": "NC Dinos",
         "start": "2026-09-22T09:30:00Z",
         "odds": {
-          "NC Dinos": 2.8375,
-          "Samsung Lions": 1.4275
+          "NC Dinos": 4.575,
+          "Samsung Lions": 1.1966666666666665
+        }
+      },
+      {
+        "id": "5ba47fd293fdf39b0ddd5b4163a78f60",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "Kiwoom Heroes",
+        "away": "Doosan Bears",
+        "start": "2026-09-22T09:30:33Z",
+        "odds": {
+          "Doosan Bears": 1.0125,
+          "Kiwoom Heroes": 14.625
         }
       }
     ],
