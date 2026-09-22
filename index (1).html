@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080b12">
+<title>SPORTS EDGE AI</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#080b12;color:#f5f7fb;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif}
+.app{max-width:480px;margin:auto;min-height:100vh;padding:12px 12px 32px}
+.head{padding:14px 4px 12px}.logo{font-size:25px;font-weight:900}.logo b{color:#579cff}.sub{font-size:12px;color:#8290a5;margin-top:4px}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:6px 0 12px}
+.tab{border:1px solid #273246;background:#101722;color:#aab6c8;border-radius:12px;padding:11px 4px;font-weight:800}
+.tab.on{background:#16345c;color:#70adff;border-color:#3c72b5}
+.card{background:#0d121b;border:1px solid #273246;border-radius:16px;padding:14px;margin:9px 0}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}.badge{background:#14233a;color:#69a7ff;border-radius:999px;padding:4px 8px;font-size:11px}
+.time{font-size:11px;color:#77869c}.team{font-size:16px;font-weight:800}.vs{font-size:11px;color:#66758b;margin:3px 0}
+.btn{width:100%;border:0;border-radius:12px;padding:12px;font-weight:800;color:white;background:#327de0;margin-top:10px}
+.btn.dark{background:#182130}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.metric{background:#101722;border:1px solid #273246;border-radius:12px;padding:9px;text-align:center}.metric small{display:block;color:#7e8da2;font-size:10px}.metric strong{font-size:17px}
+.bar{height:8px;background:#1a2432;border-radius:99px;overflow:hidden;margin:7px 0}.fill{height:100%;background:#4c91f7}
+.note{font-size:11px;line-height:1.5;color:#8391a5}.score{font-size:23px;font-weight:900;text-align:center;margin:7px}
+input,select{width:100%;background:#0c1119;color:#f5f7fb;border:1px solid #303c4e;border-radius:11px;padding:11px;margin-top:7px}
+.hidden{display:none}.empty{text-align:center;color:#8190a5;padding:25px 5px}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="head">
+    <div class="logo">SPORTS EDGE <b>/ AI</b></div>
+    <div class="sub">모바일 경기 · 배당 · 통계 분석</div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab on" data-s="soccer">⚽ 축구</button>
+    <button class="tab" data-s="baseball">⚾ 야구</button>
+    <button class="tab" data-s="basketball">🏀 농구</button>
+  </div>
+
+  <div class="card">
+    <div class="row"><b>오늘의 경기</b><span class="badge" id="status">DEMO</span></div>
+    <div class="note" style="margin-top:6px">현재는 안전한 정적 웹앱입니다. 실제 경기/배당은 별도 서버 연결 후 자동으로 표시됩니다.</div>
+  </div>
+
+  <div id="matches"></div>
+
+  <div class="card">
+    <b>🔗 실제 데이터 서버 연결</b>
+    <input id="api" placeholder="분석 서버 주소 (예: https://...)">
+    <button class="btn" onclick="connect()">서버 연결 테스트</button>
+    <div id="conn" class="note" style="margin-top:8px"></div>
+  </div>
+
+  <div id="detail" class="hidden"></div>
+
+  <div class="card">
+    <b>📌 직접 경기 분석</b>
+    <input id="home" placeholder="홈팀">
+    <input id="away" placeholder="원정팀">
+    <div class="grid">
+      <input id="ho" type="number" step=".01" placeholder="홈 배당">
+      <input id="do" type="number" step=".01" placeholder="무 배당">
+      <input id="ao" type="number" step=".01" placeholder="원정 배당">
+    </div>
+    <button class="btn" onclick="manual()">AI 확률 계산</button>
+    <div id="manualOut"></div>
+  </div>
+
+  <div class="note" style="padding:8px 2px">
+    ※ 확률과 예상 스코어는 통계적 참고값이며 실제 결과나 수익을 보장하지 않습니다.
+  </div>
+</div>
+
+<script>
+const data={
+ soccer:[
+  {l:"EPL",h:"홈팀 A",a:"원정팀 A",t:"오늘 20:00",od:[1.72,3.65,4.80],s:"2 - 1",p:[.54,.25,.21]},
+  {l:"EPL",h:"홈팀 B",a:"원정팀 B",t:"오늘 22:30",od:[2.10,3.30,3.20],s:"1 - 1",p:[.42,.29,.29]}
+ ],
+ baseball:[
+  {l:"KBO",h:"홈팀 A",a:"원정팀 A",t:"오늘 18:30",od:[1.72,null,2.08],s:"5 - 4",p:[.57,0,.43]},
+  {l:"KBO",h:"홈팀 B",a:"원정팀 B",t:"오늘 18:30",od:[2.05,null,1.76],s:"3 - 5",p:[.46,0,.54]}
+ ],
+ basketball:[
+  {l:"NBA",h:"홈팀 A",a:"원정팀 A",t:"내일 09:00",od:[1.80,null,2.02],s:"112 - 108",p:[.56,0,.44]},
+  {l:"NBA",h:"홈팀 B",a:"원정팀 B",t:"내일 11:30",od:[2.15,null,1.70],s:"105 - 110",p:[.45,0,.55]}
+ ]};
+let sport="soccer";
+
+function pct(x){return (x*100).toFixed(1)+"%"}
+function render(){
+ const box=document.getElementById("matches");box.innerHTML="";
+ data[sport].forEach((m,i)=>{
+  box.innerHTML+=`<div class="card">
+   <div class="row"><span class="badge">${m.l}</span><span class="time">${m.t}</span></div>
+   <div style="margin-top:10px"><div class="team">${m.h}</div><div class="vs">VS</div><div class="team">${m.a}</div></div>
+   <div class="grid" style="margin-top:10px">
+    <div class="metric"><small>홈승</small><strong>${pct(m.p[0])}</strong></div>
+    ${sport==="soccer"?`<div class="metric"><small>무</small><strong>${pct(m.p[1])}</strong></div>`:`<div class="metric"><small>예상</small><strong>${m.s}</strong></div>`}
+    <div class="metric"><small>원정</small><strong>${pct(m.p[2])}</strong></div>
+   </div>
+   <button class="btn dark" onclick="detail(${i})">상세 AI 분석</button>
+  </div>`
+ })
+}
+function detail(i){
+ const m=data[sport][i], names=sport==="soccer"?["홈승","무승부","원정승"]:["홈승","원정승"];
+ const probs=sport==="soccer"?[m.p[0],m.p[1],m.p[2]]:[m.p[0],m.p[2]];
+ let market=m.od.filter(x=>typeof x==="number"&&x>1).map(x=>1/x),z=market.reduce((a,b)=>a+b,0);
+ market=market.map(x=>x/z);
+ let rows=names.map((n,j)=>`<div class="row"><span>${n}</span><b>${pct(probs[j])}</b></div><div class="bar"><div class="fill" style="width:${probs[j]*100}%"></div></div>`).join("");
+ document.getElementById("detail").className="card";
+ document.getElementById("detail").innerHTML=`<div class="row"><b>AI 상세 분석</b><span class="badge">${m.l}</span></div>
+ <div class="score">${m.s}</div>${rows}
+ <div class="note">최근 폼·공격/수비 지표를 연결할 경우 이 화면에 실제 모델 결과를 표시할 수 있습니다.</div>
+ <button class="btn dark" onclick="document.getElementById('detail').className='hidden'">닫기</button>`;
+ document.getElementById("detail").scrollIntoView({behavior:"smooth"});
+}
+function manual(){
+ const h=document.getElementById("home").value||"홈팀",a=document.getElementById("away").value||"원정팀";
+ const ho=+document.getElementById("ho").value,do_=+document.getElementById("do").value,ao=+document.getElementById("ao").value;
+ if(!ho||!ao){document.getElementById("manualOut").innerHTML='<div class="note">홈/원정 배당을 입력하세요.</div>';return}
+ let q=[1/ho,1/ao],z=q[0]+q[1];q=q.map(x=>x/z);
+ document.getElementById("manualOut").innerHTML=`<div class="card"><b>${h} vs ${a}</b><div class="grid" style="margin-top:9px"><div class="metric"><small>홈</small><strong>${pct(q[0])}</strong></div><div class="metric"><small>원정</small><strong>${pct(q[1])}</strong></div><div class="metric"><small>기준</small><strong>시장</strong></div></div></div>`;
+}
+async function connect(){
+ const u=document.getElementById("api").value.trim();
+ if(!u){document.getElementById("conn").textContent="분석 서버 주소를 입력하세요.";return}
+ try{const r=await fetch(u.replace(/\/$/,"")+"/health");document.getElementById("conn").textContent=r.ok?"연결 성공":"서버 응답 오류"}
+ catch(e){document.getElementById("conn").textContent="연결 실패 — 서버 주소/CORS 설정을 확인하세요."}
+}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));b.classList.add("on");sport=b.dataset.s;render()
+});
+render();
+</script>
+</body>
+</html>
