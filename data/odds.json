@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T00:36:50.790907+00:00",
+  "updated_at": "2026-09-24T06:36:00.650273+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,9 +12,9 @@
         "away": "Leeds United",
         "start": "2026-10-10T11:30:00Z",
         "odds": {
-          "Arsenal": 1.3566666666666667,
-          "Leeds United": 7.98888888888889,
-          "Draw": 5.015555555555555
+          "Arsenal": 1.3577777777777778,
+          "Leeds United": 7.966666666666667,
+          "Draw": 5.004444444444444
         }
       },
       {
@@ -38,9 +38,9 @@
         "away": "Bournemouth",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Bournemouth": 3.8833333333333337,
-          "Chelsea": 1.7933333333333334,
-          "Draw": 4.044444444444444
+          "Bournemouth": 3.888888888888889,
+          "Chelsea": 1.7922222222222222,
+          "Draw": 4.050000000000001
         }
       },
       {
@@ -51,9 +51,9 @@
         "away": "Brighton and Hove Albion",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Brighton and Hove Albion": 2.458888888888889,
-          "Sunderland": 2.7411111111111115,
-          "Draw": 3.4444444444444446
+          "Brighton and Hove Albion": 2.4533333333333336,
+          "Sunderland": 2.73,
+          "Draw": 3.488888888888889
         }
       },
       {
@@ -129,8 +129,8 @@
         "away": "Newcastle United",
         "start": "2026-10-12T19:00:00Z",
         "odds": {
-          "Coventry City": 3.272222222222222,
-          "Newcastle United": 2.104444444444445,
+          "Coventry City": 3.27,
+          "Newcastle United": 2.1055555555555556,
           "Draw": 3.5688888888888886
         }
       },
@@ -142,8 +142,8 @@
         "away": "Chelsea",
         "start": "2026-10-17T11:30:00Z",
         "odds": {
-          "Chelsea": 2.2640000000000002,
-          "Everton": 2.838,
+          "Chelsea": 2.254,
+          "Everton": 2.848,
           "Draw": 3.7
         }
       },
@@ -181,9 +181,9 @@
         "away": "Ipswich Town",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Ipswich Town": 10.66,
+          "Ipswich Town": 10.68,
           "Manchester City": 1.212,
-          "Draw": 6.51
+          "Draw": 6.529999999999999
         }
       },
       {
@@ -207,8 +207,8 @@
         "away": "Sunderland",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Bournemouth": 1.936,
-          "Sunderland": 3.646,
+          "Bournemouth": 1.934,
+          "Sunderland": 3.65,
           "Draw": 3.6020000000000003
         }
       },
@@ -233,8 +233,8 @@
         "away": "Manchester United",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Leeds United": 2.752,
-          "Manchester United": 2.352,
+          "Leeds United": 2.75,
+          "Manchester United": 2.354,
           "Draw": 3.6100000000000003
         }
       },
@@ -260,7 +260,7 @@
         "start": "2026-10-19T19:00:00Z",
         "odds": {
           "Coventry City": 5.87,
-          "Tottenham Hotspur": 1.472,
+          "Tottenham Hotspur": 1.47,
           "Draw": 4.5600000000000005
         }
       }
@@ -274,8 +274,8 @@
         "away": "NC Dinos",
         "start": "2026-09-24T08:00:00Z",
         "odds": {
-          "KT Wiz": 1.5157142857142856,
-          "NC Dinos": 2.5628571428571427
+          "KT Wiz": 1.48375,
+          "NC Dinos": 2.6675
         }
       },
       {
@@ -286,8 +286,8 @@
         "away": "Lotte Giants",
         "start": "2026-09-24T08:00:00Z",
         "odds": {
-          "LG Twins": 1.5814285714285714,
-          "Lotte Giants": 2.39
+          "LG Twins": 1.5525,
+          "Lotte Giants": 2.455
         }
       },
       {
@@ -298,8 +298,8 @@
         "away": "Samsung Lions",
         "start": "2026-09-24T08:00:00Z",
         "odds": {
-          "Samsung Lions": 1.4628571428571429,
-          "SSG Landers": 2.738571428571429
+          "Samsung Lions": 1.4437499999999999,
+          "SSG Landers": 2.7925
         }
       }
     ],
