@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T06:34:54.352541+00:00",
+  "updated_at": "2026-09-26T12:33:42.357266+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -25,9 +25,9 @@
         "away": "Brentford",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Aston Villa": 2.5877777777777777,
-          "Brentford": 2.55,
-          "Draw": 3.5566666666666666
+          "Aston Villa": 2.59,
+          "Brentford": 2.5488888888888885,
+          "Draw": 3.554444444444444
         }
       },
       {
@@ -38,7 +38,7 @@
         "away": "Bournemouth",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Bournemouth": 3.894444444444444,
+          "Bournemouth": 3.9111111111111114,
           "Chelsea": 1.7955555555555556,
           "Draw": 4.044444444444444
         }
@@ -77,7 +77,7 @@
         "away": "Tottenham Hotspur",
         "start": "2026-10-10T16:30:00Z",
         "odds": {
-          "Manchester United": 1.6933333333333334,
+          "Manchester United": 1.6977777777777776,
           "Tottenham Hotspur": 4.3133333333333335,
           "Draw": 4.13
         }
@@ -105,7 +105,7 @@
         "odds": {
           "Everton": 2.0633333333333335,
           "Hull City": 3.612222222222222,
-          "Draw": 3.3377777777777777
+          "Draw": 3.3433333333333333
         }
       },
       {
@@ -208,8 +208,8 @@
         "start": "2026-10-18T13:00:00Z",
         "odds": {
           "Bournemouth": 1.982,
-          "Sunderland": 3.5740000000000003,
-          "Draw": 3.568
+          "Sunderland": 3.5840000000000005,
+          "Draw": 3.558
         }
       },
       {
@@ -233,8 +233,8 @@
         "away": "Manchester United",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Leeds United": 2.788,
-          "Manchester United": 2.342,
+          "Leeds United": 2.798,
+          "Manchester United": 2.332,
           "Draw": 3.5799999999999996
         }
       },
@@ -267,39 +267,48 @@
     ],
     "baseball": [
       {
-        "id": "4381f1e71fc963a0e74073f4de7ff939",
+        "id": "670a58249e098c52d88b84e1bbd7251f",
         "league": "KBO",
         "sport_key": "baseball_kbo",
-        "home": "NC Dinos",
-        "away": "Hanwha Eagles",
-        "start": "2026-09-26T08:00:00Z",
+        "home": "Doosan Bears",
+        "away": "KT Wiz",
+        "start": "2026-09-27T08:00:00Z",
         "odds": {
-          "Hanwha Eagles": 1.9625,
-          "NC Dinos": 1.83125
+          "Doosan Bears": 2.165,
+          "KT Wiz": 1.685
         }
       },
       {
-        "id": "6233181f757b0d3ad9ac8522a694b977",
+        "id": "7f37fa563c68b5b4cdf064df41e188ec",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "Lotte Giants",
+        "away": "Hanwha Eagles",
+        "start": "2026-09-27T08:00:00Z",
+        "odds": {}
+      },
+      {
+        "id": "c5fd97e37855049f20c6d8d85930054c",
         "league": "KBO",
         "sport_key": "baseball_kbo",
         "home": "Kia Tigers",
         "away": "LG Twins",
-        "start": "2026-09-26T08:00:00Z",
+        "start": "2026-09-27T08:00:00Z",
         "odds": {
-          "Kia Tigers": 1.93125,
-          "LG Twins": 1.8575
+          "Kia Tigers": 2.495,
+          "LG Twins": 1.53
         }
       },
       {
-        "id": "58a42c6fc82dacec5fbd2ca697ca4436",
+        "id": "130e77cfedf092069f0f831f62200262",
         "league": "KBO",
         "sport_key": "baseball_kbo",
-        "home": "KT Wiz",
+        "home": "NC Dinos",
         "away": "Kiwoom Heroes",
-        "start": "2026-09-26T08:00:00Z",
+        "start": "2026-09-27T08:00:00Z",
         "odds": {
-          "Kiwoom Heroes": 2.6125000000000003,
-          "KT Wiz": 1.4975
+          "Kiwoom Heroes": 2.4850000000000003,
+          "NC Dinos": 1.53
         }
       }
     ],
