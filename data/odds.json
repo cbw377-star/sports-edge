@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T00:35:59.270200+00:00",
+  "updated_at": "2026-09-26T06:34:54.352541+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -38,9 +38,9 @@
         "away": "Bournemouth",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Bournemouth": 3.9000000000000004,
-          "Chelsea": 1.7944444444444443,
-          "Draw": 4.050000000000001
+          "Bournemouth": 3.894444444444444,
+          "Chelsea": 1.7955555555555556,
+          "Draw": 4.044444444444444
         }
       },
       {
@@ -77,7 +77,7 @@
         "away": "Tottenham Hotspur",
         "start": "2026-10-10T16:30:00Z",
         "odds": {
-          "Manchester United": 1.6977777777777776,
+          "Manchester United": 1.6933333333333334,
           "Tottenham Hotspur": 4.3133333333333335,
           "Draw": 4.13
         }
@@ -105,7 +105,7 @@
         "odds": {
           "Everton": 2.0633333333333335,
           "Hull City": 3.612222222222222,
-          "Draw": 3.3433333333333333
+          "Draw": 3.3377777777777777
         }
       },
       {
@@ -130,8 +130,8 @@
         "start": "2026-10-12T19:00:00Z",
         "odds": {
           "Coventry City": 3.2633333333333336,
-          "Newcastle United": 2.0999999999999996,
-          "Draw": 3.597777777777778
+          "Newcastle United": 2.101111111111111,
+          "Draw": 3.5955555555555554
         }
       },
       {
@@ -181,9 +181,9 @@
         "away": "Ipswich Town",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Ipswich Town": 10.42,
-          "Manchester City": 1.214,
-          "Draw": 6.58
+          "Ipswich Town": 10.620000000000001,
+          "Manchester City": 1.212,
+          "Draw": 6.529999999999999
         }
       },
       {
@@ -259,8 +259,8 @@
         "away": "Coventry City",
         "start": "2026-10-19T19:00:00Z",
         "odds": {
-          "Coventry City": 5.89,
-          "Tottenham Hotspur": 1.482,
+          "Coventry City": 5.86,
+          "Tottenham Hotspur": 1.484,
           "Draw": 4.5600000000000005
         }
       }
@@ -274,8 +274,8 @@
         "away": "Hanwha Eagles",
         "start": "2026-09-26T08:00:00Z",
         "odds": {
-          "Hanwha Eagles": 1.94625,
-          "NC Dinos": 1.8425
+          "Hanwha Eagles": 1.9625,
+          "NC Dinos": 1.83125
         }
       },
       {
@@ -286,8 +286,8 @@
         "away": "LG Twins",
         "start": "2026-09-26T08:00:00Z",
         "odds": {
-          "Kia Tigers": 1.9075,
-          "LG Twins": 1.87625
+          "Kia Tigers": 1.93125,
+          "LG Twins": 1.8575
         }
       },
       {
@@ -298,8 +298,8 @@
         "away": "Kiwoom Heroes",
         "start": "2026-09-26T08:00:00Z",
         "odds": {
-          "Kiwoom Heroes": 2.47125,
-          "KT Wiz": 1.545
+          "Kiwoom Heroes": 2.6125000000000003,
+          "KT Wiz": 1.4975
         }
       }
     ],
