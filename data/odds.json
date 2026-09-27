@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T06:35:43.115320+00:00",
+  "updated_at": "2026-09-27T12:34:45.848555+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -38,8 +38,8 @@
         "away": "Bournemouth",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Bournemouth": 3.9055555555555554,
-          "Chelsea": 1.7955555555555556,
+          "Bournemouth": 4.2555555555555555,
+          "Chelsea": 1.728888888888889,
           "Draw": 4.044444444444444
         }
       },
@@ -77,7 +77,7 @@
         "away": "Tottenham Hotspur",
         "start": "2026-10-10T16:30:00Z",
         "odds": {
-          "Manchester United": 1.6933333333333334,
+          "Manchester United": 1.6977777777777776,
           "Tottenham Hotspur": 4.3133333333333335,
           "Draw": 4.13
         }
@@ -221,7 +221,7 @@
         "start": "2026-10-18T13:00:00Z",
         "odds": {
           "Brighton and Hove Albion": 1.53,
-          "Crystal Palace": 5.37,
+          "Crystal Palace": 5.33,
           "Draw": 4.4399999999999995
         }
       },
@@ -265,56 +265,7 @@
         }
       }
     ],
-    "baseball": [
-      {
-        "id": "670a58249e098c52d88b84e1bbd7251f",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Doosan Bears",
-        "away": "KT Wiz",
-        "start": "2026-09-27T08:00:00Z",
-        "odds": {
-          "Doosan Bears": 2.23625,
-          "KT Wiz": 1.65375
-        }
-      },
-      {
-        "id": "7f37fa563c68b5b4cdf064df41e188ec",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Lotte Giants",
-        "away": "Hanwha Eagles",
-        "start": "2026-09-27T08:00:00Z",
-        "odds": {
-          "Hanwha Eagles": 2.55375,
-          "Lotte Giants": 1.51875
-        }
-      },
-      {
-        "id": "c5fd97e37855049f20c6d8d85930054c",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Kia Tigers",
-        "away": "LG Twins",
-        "start": "2026-09-27T08:00:00Z",
-        "odds": {
-          "Kia Tigers": 2.5324999999999998,
-          "LG Twins": 1.5225
-        }
-      },
-      {
-        "id": "130e77cfedf092069f0f831f62200262",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "NC Dinos",
-        "away": "Kiwoom Heroes",
-        "start": "2026-09-27T08:00:00Z",
-        "odds": {
-          "Kiwoom Heroes": 2.47875,
-          "NC Dinos": 1.54125
-        }
-      }
-    ],
+    "baseball": [],
     "basketball": [
       {
         "id": "26b036ff107f3c658258eaf4a6f26228",
