@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T18:35:48.924198+00:00",
+  "updated_at": "2026-09-29T00:38:40.058954+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,9 +12,9 @@
         "away": "Leeds United",
         "start": "2026-10-10T11:30:00Z",
         "odds": {
-          "Arsenal": 1.3733333333333333,
-          "Leeds United": 7.699999999999999,
-          "Draw": 4.955555555555556
+          "Arsenal": 1.3722222222222222,
+          "Leeds United": 7.688888888888889,
+          "Draw": 5.011111111111111
         }
       },
       {
@@ -40,7 +40,7 @@
         "odds": {
           "Bournemouth": 4.300000000000001,
           "Chelsea": 1.7244444444444444,
-          "Draw": 4.091111111111111
+          "Draw": 4.102222222222222
         }
       },
       {
@@ -116,8 +116,8 @@
         "away": "Manchester City",
         "start": "2026-10-11T15:30:00Z",
         "odds": {
-          "Liverpool": 2.663333333333333,
-          "Manchester City": 2.4266666666666667,
+          "Liverpool": 2.6744444444444446,
+          "Manchester City": 2.4155555555555557,
           "Draw": 3.6955555555555555
         }
       },
@@ -143,7 +143,7 @@
         "start": "2026-10-17T11:30:00Z",
         "odds": {
           "Chelsea": 2.2640000000000002,
-          "Everton": 2.818,
+          "Everton": 2.816,
           "Draw": 3.7
         }
       },
@@ -274,8 +274,8 @@
         "away": "NC Dinos",
         "start": "2026-09-29T09:30:00Z",
         "odds": {
-          "Doosan Bears": 1.5066666666666666,
-          "NC Dinos": 2.606666666666667
+          "Doosan Bears": 1.505,
+          "NC Dinos": 2.58375
         }
       },
       {
@@ -286,8 +286,8 @@
         "away": "Hanwha Eagles",
         "start": "2026-09-29T09:30:00Z",
         "odds": {
-          "Hanwha Eagles": 3.3983333333333334,
-          "Samsung Lions": 1.3183333333333334
+          "Hanwha Eagles": 3.42875,
+          "Samsung Lions": 1.31125
         }
       },
       {
@@ -298,8 +298,8 @@
         "away": "KT Wiz",
         "start": "2026-09-29T09:30:00Z",
         "odds": {
-          "Kia Tigers": 1.8033333333333335,
-          "KT Wiz": 2.005
+          "Kia Tigers": 1.8062500000000001,
+          "KT Wiz": 1.99375
         }
       },
       {
@@ -310,8 +310,8 @@
         "away": "Kiwoom Heroes",
         "start": "2026-09-29T09:30:00Z",
         "odds": {
-          "Kiwoom Heroes": 2.658333333333333,
-          "Lotte Giants": 1.4916666666666665
+          "Kiwoom Heroes": 2.64375,
+          "Lotte Giants": 1.49
         }
       },
       {
@@ -323,7 +323,7 @@
         "start": "2026-09-29T09:30:00Z",
         "odds": {
           "LG Twins": 1.75,
-          "SSG Landers": 2.0833333333333335
+          "SSG Landers": 2.07375
         }
       }
     ],
@@ -336,8 +336,8 @@
         "away": "Boston Celtics",
         "start": "2026-10-20T19:00:00Z",
         "odds": {
-          "Boston Celtics": 2.03,
-          "Detroit Pistons": 1.812
+          "Boston Celtics": 2.04,
+          "Detroit Pistons": 1.8060000000000003
         }
       },
       {
@@ -348,8 +348,8 @@
         "away": "Philadelphia 76ers",
         "start": "2026-10-20T23:00:00Z",
         "odds": {
-          "New York Knicks": 1.516,
-          "Philadelphia 76ers": 2.59
+          "New York Knicks": 1.51,
+          "Philadelphia 76ers": 2.6100000000000003
         }
       },
       {
@@ -360,8 +360,8 @@
         "away": "Oklahoma City Thunder",
         "start": "2026-10-21T01:30:00Z",
         "odds": {
-          "Oklahoma City Thunder": 2.028,
-          "San Antonio Spurs": 1.81
+          "Oklahoma City Thunder": 2.058,
+          "San Antonio Spurs": 1.7920000000000003
         }
       },
       {
@@ -372,8 +372,8 @@
         "away": "Atlanta Hawks",
         "start": "2026-10-21T23:10:00Z",
         "odds": {
-          "Atlanta Hawks": 2.135,
-          "Orlando Magic": 1.7375
+          "Atlanta Hawks": 2.1475,
+          "Orlando Magic": 1.73
         }
       },
       {
@@ -384,8 +384,8 @@
         "away": "Milwaukee Bucks",
         "start": "2026-10-21T23:10:00Z",
         "odds": {
-          "Milwaukee Bucks": 2.9,
-          "Washington Wizards": 1.4249999999999998
+          "Milwaukee Bucks": 2.8875,
+          "Washington Wizards": 1.4275
         }
       },
       {
@@ -396,8 +396,8 @@
         "away": "Charlotte Hornets",
         "start": "2026-10-21T23:40:00Z",
         "odds": {
-          "Brooklyn Nets": 2.3499999999999996,
-          "Charlotte Hornets": 1.6175
+          "Brooklyn Nets": 2.425,
+          "Charlotte Hornets": 1.585
         }
       },
       {
@@ -408,8 +408,8 @@
         "away": "Minnesota Timberwolves",
         "start": "2026-10-21T23:40:00Z",
         "odds": {
-          "Miami Heat": 1.818,
-          "Minnesota Timberwolves": 2.03
+          "Miami Heat": 1.8240000000000003,
+          "Minnesota Timberwolves": 2.02
         }
       },
       {
@@ -420,8 +420,8 @@
         "away": "Indiana Pacers",
         "start": "2026-10-22T00:10:00Z",
         "odds": {
-          "Indiana Pacers": 1.605,
-          "New Orleans Pelicans": 2.3875
+          "Indiana Pacers": 1.6,
+          "New Orleans Pelicans": 2.4
         }
       },
       {
@@ -432,8 +432,8 @@
         "away": "Utah Jazz",
         "start": "2026-10-22T00:10:00Z",
         "odds": {
-          "Memphis Grizzlies": 2.215,
-          "Utah Jazz": 1.685
+          "Memphis Grizzlies": 2.205,
+          "Utah Jazz": 1.69
         }
       },
       {
@@ -444,8 +444,8 @@
         "away": "Dallas Mavericks",
         "start": "2026-10-22T00:40:00Z",
         "odds": {
-          "Dallas Mavericks": 3.5,
-          "Houston Rockets": 1.3175000000000001
+          "Dallas Mavericks": 3.5375,
+          "Houston Rockets": 1.31
         }
       },
       {
@@ -456,8 +456,8 @@
         "away": "Golden State Warriors",
         "start": "2026-10-22T02:10:00Z",
         "odds": {
-          "Golden State Warriors": 2.498,
-          "Los Angeles Lakers": 1.556
+          "Golden State Warriors": 2.586,
+          "Los Angeles Lakers": 1.522
         }
       },
       {
@@ -468,8 +468,8 @@
         "away": "Phoenix Suns",
         "start": "2026-10-22T02:10:00Z",
         "odds": {
-          "Phoenix Suns": 2.4425,
-          "Portland Trail Blazers": 1.5750000000000002
+          "Phoenix Suns": 2.43,
+          "Portland Trail Blazers": 1.58
         }
       },
       {
@@ -569,6 +569,18 @@
         }
       },
       {
+        "id": "a0f5d89a4fc51e52edd0e70d1e4cbaf2",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Toronto Raptors",
+        "away": "Orlando Magic",
+        "start": "2026-10-30T23:40:00Z",
+        "odds": {
+          "Orlando Magic": 2.3,
+          "Toronto Raptors": 1.65
+        }
+      },
+      {
         "id": "b9778d0e3a26167eb49901dcae7eeb98",
         "league": "NBA",
         "sport_key": "basketball_nba",
@@ -590,6 +602,18 @@
         "odds": {
           "Indiana Pacers": 2.3,
           "Miami Heat": 1.65
+        }
+      },
+      {
+        "id": "cac1461f5983a88fac612685395aa897",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Minnesota Timberwolves",
+        "away": "Los Angeles Clippers",
+        "start": "2026-10-31T00:10:00Z",
+        "odds": {
+          "Los Angeles Clippers": 3.85,
+          "Minnesota Timberwolves": 1.28
         }
       },
       {
@@ -662,6 +686,18 @@
         "odds": {
           "Golden State Warriors": 4.9,
           "San Antonio Spurs": 1.19
+        }
+      },
+      {
+        "id": "9051693857c6a0e5e1bc6bb2b4f6fe35",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Detroit Pistons",
+        "away": "Toronto Raptors",
+        "start": "2026-11-21T00:40:00Z",
+        "odds": {
+          "Detroit Pistons": 1.87,
+          "Toronto Raptors": 1.95
         }
       },
       {
@@ -756,8 +792,8 @@
         "away": "Los Angeles Lakers",
         "start": "2026-11-28T02:40:00Z",
         "odds": {
-          "Los Angeles Lakers": 3.25,
-          "San Antonio Spurs": 1.36
+          "Los Angeles Lakers": 3.3,
+          "San Antonio Spurs": 1.35
         }
       },
       {
