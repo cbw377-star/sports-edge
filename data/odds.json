@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T12:39:18.745852+00:00",
+  "updated_at": "2026-09-29T18:36:25.926468+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -90,9 +90,9 @@
         "away": "Nottingham Forest",
         "start": "2026-10-11T13:00:00Z",
         "odds": {
-          "Crystal Palace": 2.6255555555555556,
-          "Nottingham Forest": 2.6655555555555557,
-          "Draw": 3.3055555555555554
+          "Crystal Palace": 2.631111111111111,
+          "Nottingham Forest": 2.671111111111111,
+          "Draw": 3.2777777777777777
         }
       },
       {
@@ -168,8 +168,8 @@
         "away": "Hull City",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Fulham": 1.65,
-          "Hull City": 4.8,
+          "Fulham": 1.654,
+          "Hull City": 4.74,
           "Draw": 4.02
         }
       },
@@ -194,7 +194,7 @@
         "away": "Aston Villa",
         "start": "2026-10-17T16:30:00Z",
         "odds": {
-          "Aston Villa": 3.188,
+          "Aston Villa": 3.184,
           "Newcastle United": 2.07,
           "Draw": 3.7399999999999998
         }
@@ -207,9 +207,9 @@
         "away": "Sunderland",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Bournemouth": 1.982,
-          "Sunderland": 3.5840000000000005,
-          "Draw": 3.558
+          "Bournemouth": 1.998,
+          "Sunderland": 3.5420000000000003,
+          "Draw": 3.562
         }
       },
       {
@@ -220,9 +220,9 @@
         "away": "Crystal Palace",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Brighton and Hove Albion": 1.532,
+          "Brighton and Hove Albion": 1.534,
           "Crystal Palace": 5.3100000000000005,
-          "Draw": 4.42
+          "Draw": 4.4
         }
       },
       {
@@ -267,39 +267,63 @@
     ],
     "baseball": [
       {
-        "id": "ae2a4075e8cd949fbd55bb05f480b38e",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Samsung Lions",
-        "away": "Hanwha Eagles",
-        "start": "2026-09-29T09:30:39Z",
-        "odds": {
-          "Hanwha Eagles": 34.0,
-          "Samsung Lions": 1.01
-        }
-      },
-      {
-        "id": "5f6ca2c6d96a30eb0d008c9311f0ede0",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Kia Tigers",
-        "away": "KT Wiz",
-        "start": "2026-09-29T09:31:16Z",
-        "odds": {
-          "Kia Tigers": 1.0816666666666668,
-          "KT Wiz": 6.541666666666667
-        }
-      },
-      {
-        "id": "2776e0449907ae3e33442e516fcfc131",
+        "id": "9b021baa78813593dee73b9213bdcc49",
         "league": "KBO",
         "sport_key": "baseball_kbo",
         "home": "Doosan Bears",
         "away": "NC Dinos",
-        "start": "2026-09-29T09:31:35Z",
+        "start": "2026-09-30T09:30:00Z",
         "odds": {
-          "NC Dinos": 18.0,
-          "Doosan Bears": 1.01
+          "Doosan Bears": 1.88,
+          "NC Dinos": 1.92
+        }
+      },
+      {
+        "id": "2dbd5db6e48c0e12d805990bd4d73137",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "Samsung Lions",
+        "away": "Hanwha Eagles",
+        "start": "2026-09-30T09:30:00Z",
+        "odds": {
+          "Hanwha Eagles": 2.3649999999999998,
+          "Samsung Lions": 1.5966666666666667
+        }
+      },
+      {
+        "id": "100fbcad5bab18c23ace19d2d5434bab",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "Kia Tigers",
+        "away": "KT Wiz",
+        "start": "2026-09-30T09:30:00Z",
+        "odds": {
+          "Kia Tigers": 2.5566666666666666,
+          "KT Wiz": 1.5266666666666666
+        }
+      },
+      {
+        "id": "800926754920a9ca95494abb4a8b2533",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "Lotte Giants",
+        "away": "Kiwoom Heroes",
+        "start": "2026-09-30T09:30:00Z",
+        "odds": {
+          "Kiwoom Heroes": 2.7083333333333335,
+          "Lotte Giants": 1.4716666666666667
+        }
+      },
+      {
+        "id": "0dc1068a9838c6714a093ac5eaa54494",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "SSG Landers",
+        "away": "LG Twins",
+        "start": "2026-09-30T09:30:00Z",
+        "odds": {
+          "LG Twins": 1.6783333333333335,
+          "SSG Landers": 2.2083333333333335
         }
       }
     ],
