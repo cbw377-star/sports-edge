@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T00:40:46.866413+00:00",
+  "updated_at": "2026-09-30T06:38:32.811490+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -13,7 +13,7 @@
         "start": "2026-10-10T11:30:00Z",
         "odds": {
           "Arsenal": 1.3722222222222222,
-          "Leeds United": 7.711111111111112,
+          "Leeds United": 7.699999999999999,
           "Draw": 5.011111111111111
         }
       },
@@ -39,8 +39,8 @@
         "start": "2026-10-10T14:00:00Z",
         "odds": {
           "Bournemouth": 4.300000000000001,
-          "Chelsea": 1.7244444444444444,
-          "Draw": 4.102222222222222
+          "Chelsea": 1.7255555555555555,
+          "Draw": 4.091111111111111
         }
       },
       {
@@ -116,9 +116,9 @@
         "away": "Manchester City",
         "start": "2026-10-11T15:30:00Z",
         "odds": {
-          "Liverpool": 2.6055555555555556,
-          "Manchester City": 2.468888888888889,
-          "Draw": 3.67
+          "Liverpool": 2.594444444444444,
+          "Manchester City": 2.4744444444444444,
+          "Draw": 3.6811111111111114
         }
       },
       {
@@ -194,7 +194,7 @@
         "away": "Aston Villa",
         "start": "2026-10-17T16:30:00Z",
         "odds": {
-          "Aston Villa": 3.184,
+          "Aston Villa": 3.164,
           "Newcastle United": 2.07,
           "Draw": 3.7399999999999998
         }
@@ -274,8 +274,8 @@
         "away": "NC Dinos",
         "start": "2026-09-30T09:30:00Z",
         "odds": {
-          "Doosan Bears": 1.87,
-          "NC Dinos": 1.9237499999999998
+          "Doosan Bears": 1.85375,
+          "NC Dinos": 1.94125
         }
       },
       {
@@ -286,8 +286,8 @@
         "away": "Hanwha Eagles",
         "start": "2026-09-30T09:30:00Z",
         "odds": {
-          "Hanwha Eagles": 2.4275,
-          "Samsung Lions": 1.56125
+          "Hanwha Eagles": 2.50625,
+          "Samsung Lions": 1.53125
         }
       },
       {
@@ -298,8 +298,8 @@
         "away": "KT Wiz",
         "start": "2026-09-30T09:30:00Z",
         "odds": {
-          "Kia Tigers": 2.54,
-          "KT Wiz": 1.52125
+          "Kia Tigers": 2.5549999999999997,
+          "KT Wiz": 1.51375
         }
       },
       {
@@ -310,8 +310,8 @@
         "away": "Kiwoom Heroes",
         "start": "2026-09-30T09:30:00Z",
         "odds": {
-          "Kiwoom Heroes": 2.88,
-          "Lotte Giants": 1.4175
+          "Kiwoom Heroes": 3.05875,
+          "Lotte Giants": 1.37625
         }
       },
       {
@@ -322,8 +322,8 @@
         "away": "LG Twins",
         "start": "2026-09-30T09:30:00Z",
         "odds": {
-          "LG Twins": 1.67875,
-          "SSG Landers": 2.19125
+          "LG Twins": 1.66,
+          "SSG Landers": 2.23125
         }
       }
     ],
