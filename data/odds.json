@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T06:38:32.811490+00:00",
+  "updated_at": "2026-09-30T12:42:28.471770+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -38,8 +38,8 @@
         "away": "Bournemouth",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Bournemouth": 4.300000000000001,
-          "Chelsea": 1.7255555555555555,
+          "Bournemouth": 4.333333333333333,
+          "Chelsea": 1.7144444444444444,
           "Draw": 4.091111111111111
         }
       },
@@ -64,9 +64,9 @@
         "away": "Fulham",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Fulham": 2.52,
-          "Ipswich Town": 2.6611111111111114,
-          "Draw": 3.5033333333333334
+          "Fulham": 2.5211111111111113,
+          "Ipswich Town": 2.66,
+          "Draw": 3.5055555555555555
         }
       },
       {
@@ -116,8 +116,8 @@
         "away": "Manchester City",
         "start": "2026-10-11T15:30:00Z",
         "odds": {
-          "Liverpool": 2.594444444444444,
-          "Manchester City": 2.4744444444444444,
+          "Liverpool": 2.55,
+          "Manchester City": 2.53,
           "Draw": 3.6811111111111114
         }
       },
@@ -155,8 +155,8 @@
         "away": "Liverpool",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Brentford": 2.692,
-          "Liverpool": 2.372,
+          "Brentford": 2.694,
+          "Liverpool": 2.37,
           "Draw": 3.6700000000000004
         }
       },
@@ -209,7 +209,7 @@
         "odds": {
           "Bournemouth": 1.998,
           "Sunderland": 3.5420000000000003,
-          "Draw": 3.562
+          "Draw": 3.566
         }
       },
       {
@@ -235,7 +235,7 @@
         "odds": {
           "Leeds United": 2.798,
           "Manchester United": 2.332,
-          "Draw": 3.5799999999999996
+          "Draw": 3.59
         }
       },
       {
@@ -259,35 +259,23 @@
         "away": "Coventry City",
         "start": "2026-10-19T19:00:00Z",
         "odds": {
-          "Coventry City": 5.82,
+          "Coventry City": 5.85,
           "Tottenham Hotspur": 1.486,
-          "Draw": 4.5600000000000005
+          "Draw": 4.5200000000000005
         }
       }
     ],
     "baseball": [
       {
-        "id": "9b021baa78813593dee73b9213bdcc49",
+        "id": "800926754920a9ca95494abb4a8b2533",
         "league": "KBO",
         "sport_key": "baseball_kbo",
-        "home": "Doosan Bears",
-        "away": "NC Dinos",
-        "start": "2026-09-30T09:30:00Z",
+        "home": "Lotte Giants",
+        "away": "Kiwoom Heroes",
+        "start": "2026-09-30T09:30:36Z",
         "odds": {
-          "Doosan Bears": 1.85375,
-          "NC Dinos": 1.94125
-        }
-      },
-      {
-        "id": "2dbd5db6e48c0e12d805990bd4d73137",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "Samsung Lions",
-        "away": "Hanwha Eagles",
-        "start": "2026-09-30T09:30:00Z",
-        "odds": {
-          "Hanwha Eagles": 2.50625,
-          "Samsung Lions": 1.53125
+          "Kiwoom Heroes": 34.0,
+          "Lotte Giants": 1.01
         }
       },
       {
@@ -296,34 +284,22 @@
         "sport_key": "baseball_kbo",
         "home": "Kia Tigers",
         "away": "KT Wiz",
-        "start": "2026-09-30T09:30:00Z",
+        "start": "2026-09-30T09:31:23Z",
         "odds": {
-          "Kia Tigers": 2.5549999999999997,
-          "KT Wiz": 1.51375
+          "Kia Tigers": 2.055,
+          "KT Wiz": 1.7149999999999999
         }
       },
       {
-        "id": "800926754920a9ca95494abb4a8b2533",
+        "id": "9b021baa78813593dee73b9213bdcc49",
         "league": "KBO",
         "sport_key": "baseball_kbo",
-        "home": "Lotte Giants",
-        "away": "Kiwoom Heroes",
-        "start": "2026-09-30T09:30:00Z",
+        "home": "Doosan Bears",
+        "away": "NC Dinos",
+        "start": "2026-09-30T09:33:05Z",
         "odds": {
-          "Kiwoom Heroes": 3.05875,
-          "Lotte Giants": 1.37625
-        }
-      },
-      {
-        "id": "0dc1068a9838c6714a093ac5eaa54494",
-        "league": "KBO",
-        "sport_key": "baseball_kbo",
-        "home": "SSG Landers",
-        "away": "LG Twins",
-        "start": "2026-09-30T09:30:00Z",
-        "odds": {
-          "LG Twins": 1.66,
-          "SSG Landers": 2.23125
+          "Doosan Bears": 8.216666666666667,
+          "NC Dinos": 1.0833333333333333
         }
       }
     ],
