@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T18:38:16.692096+00:00",
+  "updated_at": "2026-10-02T00:40:10.558322+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,9 +12,9 @@
         "away": "Leeds United",
         "start": "2026-10-10T11:30:00Z",
         "odds": {
-          "Arsenal": 1.3711111111111112,
-          "Leeds United": 7.722222222222222,
-          "Draw": 5.0
+          "Arsenal": 1.37,
+          "Leeds United": 7.711111111111112,
+          "Draw": 4.966666666666667
         }
       },
       {
@@ -116,9 +116,9 @@
         "away": "Manchester City",
         "start": "2026-10-11T15:30:00Z",
         "odds": {
-          "Liverpool": 2.5455555555555556,
+          "Liverpool": 2.5444444444444443,
           "Manchester City": 2.5344444444444445,
-          "Draw": 3.6744444444444446
+          "Draw": 3.6799999999999997
         }
       },
       {
@@ -181,7 +181,7 @@
         "away": "Ipswich Town",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Ipswich Town": 10.74,
+          "Ipswich Town": 10.76,
           "Manchester City": 1.212,
           "Draw": 6.529999999999999
         }
@@ -323,8 +323,8 @@
         "away": "Milwaukee Bucks",
         "start": "2026-10-21T23:10:00Z",
         "odds": {
-          "Milwaukee Bucks": 2.825,
-          "Washington Wizards": 1.4449999999999998
+          "Milwaukee Bucks": 2.81,
+          "Washington Wizards": 1.45
         }
       },
       {
@@ -455,8 +455,8 @@
         "away": "Houston Rockets",
         "start": "2026-10-24T01:40:00Z",
         "odds": {
-          "Houston Rockets": 2.8,
-          "San Antonio Spurs": 1.46
+          "Houston Rockets": 2.7,
+          "San Antonio Spurs": 1.49
         }
       },
       {
@@ -515,8 +515,8 @@
         "away": "Orlando Magic",
         "start": "2026-10-30T23:40:00Z",
         "odds": {
-          "Orlando Magic": 2.3,
-          "Toronto Raptors": 1.65
+          "Orlando Magic": 2.24,
+          "Toronto Raptors": 1.68
         }
       },
       {
@@ -527,8 +527,8 @@
         "away": "Houston Rockets",
         "start": "2026-10-31T00:10:00Z",
         "odds": {
-          "Dallas Mavericks": 2.45,
-          "Houston Rockets": 1.57
+          "Dallas Mavericks": 2.4,
+          "Houston Rockets": 1.6
         }
       },
       {
