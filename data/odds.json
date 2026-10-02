@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T06:38:57.436777+00:00",
+  "updated_at": "2026-10-02T12:39:15.751038+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,8 +12,8 @@
         "away": "Leeds United",
         "start": "2026-10-10T11:30:00Z",
         "odds": {
-          "Arsenal": 1.3711111111111112,
-          "Leeds United": 7.722222222222222,
+          "Arsenal": 1.3733333333333333,
+          "Leeds United": 7.711111111111112,
           "Draw": 5.011111111111111
         }
       },
@@ -39,7 +39,7 @@
         "start": "2026-10-10T14:00:00Z",
         "odds": {
           "Bournemouth": 4.311111111111111,
-          "Chelsea": 1.72,
+          "Chelsea": 1.7155555555555555,
           "Draw": 4.096666666666667
         }
       },
@@ -52,8 +52,8 @@
         "start": "2026-10-10T14:00:00Z",
         "odds": {
           "Brighton and Hove Albion": 2.3755555555555556,
-          "Sunderland": 2.8755555555555556,
-          "Draw": 3.4633333333333334
+          "Sunderland": 2.873333333333333,
+          "Draw": 3.4655555555555555
         }
       },
       {
@@ -116,8 +116,8 @@
         "away": "Manchester City",
         "start": "2026-10-11T15:30:00Z",
         "odds": {
-          "Liverpool": 2.5444444444444443,
-          "Manchester City": 2.5344444444444445,
+          "Liverpool": 2.5466666666666664,
+          "Manchester City": 2.532222222222222,
           "Draw": 3.6799999999999997
         }
       },
@@ -129,9 +129,9 @@
         "away": "Newcastle United",
         "start": "2026-10-12T19:00:00Z",
         "odds": {
-          "Coventry City": 3.2255555555555557,
-          "Newcastle United": 2.1355555555555554,
-          "Draw": 3.5644444444444443
+          "Coventry City": 3.2422222222222223,
+          "Newcastle United": 2.1244444444444444,
+          "Draw": 3.5700000000000003
         }
       },
       {
@@ -207,8 +207,8 @@
         "away": "Sunderland",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Bournemouth": 1.996,
-          "Sunderland": 3.5460000000000003,
+          "Bournemouth": 1.998,
+          "Sunderland": 3.5420000000000003,
           "Draw": 3.566
         }
       },
@@ -265,7 +265,68 @@
         }
       }
     ],
-    "baseball": [],
+    "baseball": [
+      {
+        "id": "43e43648462dd5400f6604d48f4278b1",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "Samsung Lions",
+        "away": "Doosan Bears",
+        "start": "2026-10-03T05:00:00Z",
+        "odds": {
+          "Doosan Bears": 2.2528571428571427,
+          "Samsung Lions": 1.6514285714285712
+        }
+      },
+      {
+        "id": "e7b4638379d701bc60904ae4ebee3a24",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "start": "2026-10-03T05:00:00Z",
+        "odds": {
+          "Hanwha Eagles": 1.6157142857142859,
+          "Kiwoom Heroes": 2.3185714285714285
+        }
+      },
+      {
+        "id": "07a71b923c0bb8447f71344db0b10ba4",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "KT Wiz",
+        "away": "Lotte Giants",
+        "start": "2026-10-03T05:00:00Z",
+        "odds": {
+          "KT Wiz": 1.637142857142857,
+          "Lotte Giants": 2.2800000000000002
+        }
+      },
+      {
+        "id": "864c5e4b94020dbe5a699aa947b6a6ff",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "LG Twins",
+        "away": "Kia Tigers",
+        "start": "2026-10-03T05:00:00Z",
+        "odds": {
+          "Kia Tigers": 2.0085714285714285,
+          "LG Twins": 1.7957142857142858
+        }
+      },
+      {
+        "id": "fc3f3bede8fc6077b3b1f253d31e7a2c",
+        "league": "KBO",
+        "sport_key": "baseball_kbo",
+        "home": "NC Dinos",
+        "away": "SSG Landers",
+        "start": "2026-10-03T05:00:00Z",
+        "odds": {
+          "NC Dinos": 1.5442857142857143,
+          "SSG Landers": 2.4857142857142853
+        }
+      }
+    ],
     "basketball": [
       {
         "id": "26b036ff107f3c658258eaf4a6f26228",
@@ -311,8 +372,8 @@
         "away": "Atlanta Hawks",
         "start": "2026-10-21T23:10:00Z",
         "odds": {
-          "Atlanta Hawks": 2.1475,
-          "Orlando Magic": 1.73
+          "Atlanta Hawks": 2.1375,
+          "Orlando Magic": 1.7375
         }
       },
       {
@@ -333,10 +394,10 @@
         "sport_key": "basketball_nba",
         "home": "Brooklyn Nets",
         "away": "Charlotte Hornets",
-        "start": "2026-10-21T23:40:00Z",
+        "start": "2026-10-21T23:30:00Z",
         "odds": {
-          "Brooklyn Nets": 2.4425,
-          "Charlotte Hornets": 1.5750000000000002
+          "Brooklyn Nets": 2.4499999999999997,
+          "Charlotte Hornets": 1.57
         }
       },
       {
@@ -359,8 +420,8 @@
         "away": "Indiana Pacers",
         "start": "2026-10-22T00:10:00Z",
         "odds": {
-          "Indiana Pacers": 1.6,
-          "New Orleans Pelicans": 2.4
+          "Indiana Pacers": 1.6125,
+          "New Orleans Pelicans": 2.375
         }
       },
       {
@@ -371,8 +432,8 @@
         "away": "Utah Jazz",
         "start": "2026-10-22T00:10:00Z",
         "odds": {
-          "Memphis Grizzlies": 2.19,
-          "Utah Jazz": 1.7
+          "Memphis Grizzlies": 2.205,
+          "Utah Jazz": 1.69
         }
       },
       {
@@ -407,8 +468,8 @@
         "away": "Phoenix Suns",
         "start": "2026-10-22T02:10:00Z",
         "odds": {
-          "Phoenix Suns": 2.43,
-          "Portland Trail Blazers": 1.58
+          "Phoenix Suns": 2.425,
+          "Portland Trail Blazers": 1.5825
         }
       },
       {
