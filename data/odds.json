@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T18:37:00.772225+00:00",
+  "updated_at": "2026-10-03T00:38:43.472702+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -77,9 +77,9 @@
         "away": "Tottenham Hotspur",
         "start": "2026-10-10T16:30:00Z",
         "odds": {
-          "Manchester United": 1.7022222222222223,
+          "Manchester United": 1.701111111111111,
           "Tottenham Hotspur": 4.366666666666667,
-          "Draw": 4.151111111111111
+          "Draw": 4.156666666666666
         }
       },
       {
@@ -274,8 +274,8 @@
         "away": "Doosan Bears",
         "start": "2026-10-03T05:00:00Z",
         "odds": {
-          "Doosan Bears": 2.2528571428571427,
-          "Samsung Lions": 1.6514285714285712
+          "Doosan Bears": 2.2962499999999997,
+          "Samsung Lions": 1.6287500000000001
         }
       },
       {
@@ -286,8 +286,8 @@
         "away": "Kiwoom Heroes",
         "start": "2026-10-03T05:00:00Z",
         "odds": {
-          "Hanwha Eagles": 1.6099999999999999,
-          "Kiwoom Heroes": 2.3328571428571427
+          "Hanwha Eagles": 1.6225,
+          "Kiwoom Heroes": 2.30375
         }
       },
       {
@@ -298,8 +298,8 @@
         "away": "Lotte Giants",
         "start": "2026-10-03T05:00:00Z",
         "odds": {
-          "KT Wiz": 1.6342857142857141,
-          "Lotte Giants": 2.29
+          "KT Wiz": 1.6075,
+          "Lotte Giants": 2.3375
         }
       },
       {
@@ -310,8 +310,8 @@
         "away": "Kia Tigers",
         "start": "2026-10-03T05:00:00Z",
         "odds": {
-          "Kia Tigers": 2.0085714285714285,
-          "LG Twins": 1.7985714285714285
+          "Kia Tigers": 2.0075,
+          "LG Twins": 1.79875
         }
       },
       {
@@ -322,8 +322,8 @@
         "away": "SSG Landers",
         "start": "2026-10-03T05:00:00Z",
         "odds": {
-          "NC Dinos": 1.56,
-          "SSG Landers": 2.4514285714285715
+          "NC Dinos": 1.56375,
+          "SSG Landers": 2.43125
         }
       }
     ],
@@ -456,8 +456,8 @@
         "away": "Golden State Warriors",
         "start": "2026-10-22T02:10:00Z",
         "odds": {
-          "Golden State Warriors": 2.568,
-          "Los Angeles Lakers": 1.528
+          "Golden State Warriors": 2.552,
+          "Los Angeles Lakers": 1.536
         }
       },
       {
@@ -780,8 +780,8 @@
         "away": "Miami Heat",
         "start": "2026-11-28T00:10:00Z",
         "odds": {
-          "Miami Heat": 2.54,
-          "New York Knicks": 1.54
+          "Miami Heat": 2.5,
+          "New York Knicks": 1.56
         }
       },
       {
@@ -792,8 +792,8 @@
         "away": "Los Angeles Lakers",
         "start": "2026-11-28T02:40:00Z",
         "odds": {
-          "Los Angeles Lakers": 3.05,
-          "San Antonio Spurs": 1.4
+          "Los Angeles Lakers": 3.1,
+          "San Antonio Spurs": 1.39
         }
       },
       {
@@ -816,8 +816,8 @@
         "away": "Miami Heat",
         "start": "2026-12-25T19:30:00Z",
         "odds": {
-          "Boston Celtics": 1.544,
-          "Miami Heat": 2.522
+          "Boston Celtics": 1.54,
+          "Miami Heat": 2.5300000000000002
         }
       },
       {
