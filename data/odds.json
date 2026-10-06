@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T00:43:59.350933+00:00",
+  "updated_at": "2026-10-06T06:40:31.785608+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,9 +12,9 @@
         "away": "Leeds United",
         "start": "2026-10-10T11:30:00Z",
         "odds": {
-          "Arsenal": 1.3622222222222222,
-          "Leeds United": 7.7666666666666675,
-          "Draw": 4.944444444444445
+          "Arsenal": 1.36,
+          "Leeds United": 7.822222222222223,
+          "Draw": 4.955555555555556
         }
       },
       {
@@ -26,7 +26,7 @@
         "start": "2026-10-10T14:00:00Z",
         "odds": {
           "Aston Villa": 2.602222222222222,
-          "Brentford": 2.531111111111111,
+          "Brentford": 2.5366666666666666,
           "Draw": 3.488888888888889
         }
       },
@@ -40,7 +40,7 @@
         "odds": {
           "Bournemouth": 4.3566666666666665,
           "Chelsea": 1.6922222222222223,
-          "Draw": 4.097777777777778
+          "Draw": 4.064444444444444
         }
       },
       {
@@ -51,8 +51,8 @@
         "away": "Brighton and Hove Albion",
         "start": "2026-10-10T14:00:00Z",
         "odds": {
-          "Brighton and Hove Albion": 2.3377777777777777,
-          "Sunderland": 2.8833333333333333,
+          "Brighton and Hove Albion": 2.3433333333333333,
+          "Sunderland": 2.8666666666666667,
           "Draw": 3.4522222222222223
         }
       },
@@ -90,8 +90,8 @@
         "away": "Nottingham Forest",
         "start": "2026-10-11T13:00:00Z",
         "odds": {
-          "Crystal Palace": 2.6077777777777778,
-          "Nottingham Forest": 2.6533333333333338,
+          "Crystal Palace": 2.606666666666667,
+          "Nottingham Forest": 2.655555555555556,
           "Draw": 3.2544444444444443
         }
       },
@@ -103,8 +103,8 @@
         "away": "Everton",
         "start": "2026-10-11T13:00:00Z",
         "odds": {
-          "Everton": 2.057777777777778,
-          "Hull City": 3.611111111111111,
+          "Everton": 2.072222222222222,
+          "Hull City": 3.5688888888888886,
           "Draw": 3.3144444444444443
         }
       },
@@ -196,7 +196,7 @@
         "odds": {
           "Aston Villa": 3.164,
           "Newcastle United": 2.066,
-          "Draw": 3.7600000000000002
+          "Draw": 3.7700000000000005
         }
       },
       {
@@ -209,7 +209,7 @@
         "odds": {
           "Bournemouth": 1.998,
           "Sunderland": 3.5519999999999996,
-          "Draw": 3.556
+          "Draw": 3.5520000000000005
         }
       },
       {
@@ -274,8 +274,8 @@
         "away": "Doosan Bears",
         "start": "2026-10-06T09:30:00Z",
         "odds": {
-          "Doosan Bears": 1.542857142857143,
-          "Lotte Giants": 2.5
+          "Doosan Bears": 1.48625,
+          "Lotte Giants": 2.64625
         }
       },
       {
@@ -286,8 +286,8 @@
         "away": "SSG Landers",
         "start": "2026-10-06T09:30:00Z",
         "odds": {
-          "Hanwha Eagles": 1.5257142857142856,
-          "SSG Landers": 2.542857142857143
+          "Hanwha Eagles": 1.52875,
+          "SSG Landers": 2.525
         }
       },
       {
@@ -298,8 +298,8 @@
         "away": "Samsung Lions",
         "start": "2026-10-06T09:30:00Z",
         "odds": {
-          "Kia Tigers": 1.6728571428571428,
-          "Samsung Lions": 2.218571428571429
+          "Kia Tigers": 1.635,
+          "Samsung Lions": 2.27625
         }
       },
       {
@@ -310,8 +310,8 @@
         "away": "KT Wiz",
         "start": "2026-10-06T09:30:00Z",
         "odds": {
-          "Kiwoom Heroes": 3.0557142857142856,
-          "KT Wiz": 1.3800000000000001
+          "Kiwoom Heroes": 3.235,
+          "KT Wiz": 1.3475000000000001
         }
       },
       {
@@ -322,8 +322,8 @@
         "away": "NC Dinos",
         "start": "2026-10-06T09:30:00Z",
         "odds": {
-          "LG Twins": 1.6114285714285714,
-          "NC Dinos": 2.334285714285714
+          "LG Twins": 1.57375,
+          "NC Dinos": 2.415
         }
       }
     ],
@@ -372,8 +372,8 @@
         "away": "Atlanta Hawks",
         "start": "2026-10-21T23:10:00Z",
         "odds": {
-          "Atlanta Hawks": 2.1580000000000004,
-          "Orlando Magic": 1.7239999999999998
+          "Atlanta Hawks": 2.15,
+          "Orlando Magic": 1.73
         }
       },
       {
@@ -396,8 +396,8 @@
         "away": "Charlotte Hornets",
         "start": "2026-10-21T23:30:00Z",
         "odds": {
-          "Brooklyn Nets": 2.32,
-          "Charlotte Hornets": 1.634
+          "Brooklyn Nets": 2.2600000000000002,
+          "Charlotte Hornets": 1.666
         }
       },
       {
