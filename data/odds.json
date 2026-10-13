@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T06:46:45.692775+00:00",
+  "updated_at": "2026-10-13T12:46:55.345554+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -25,9 +25,9 @@
         "away": "Liverpool",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Brentford": 2.461111111111111,
-          "Liverpool": 2.7,
-          "Draw": 3.6422222222222222
+          "Brentford": 2.388888888888889,
+          "Liverpool": 2.787777777777778,
+          "Draw": 3.6544444444444446
         }
       },
       {
@@ -38,9 +38,9 @@
         "away": "Hull City",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Fulham": 1.672222222222222,
-          "Hull City": 4.782222222222222,
-          "Draw": 4.055555555555555
+          "Fulham": 1.6822222222222223,
+          "Hull City": 4.765555555555555,
+          "Draw": 4.027777777777778
         }
       },
       {
@@ -51,7 +51,7 @@
         "away": "Ipswich Town",
         "start": "2026-10-17T14:00:00Z",
         "odds": {
-          "Ipswich Town": 10.644444444444444,
+          "Ipswich Town": 10.655555555555557,
           "Manchester City": 1.2177777777777776,
           "Draw": 7.077777777777778
         }
@@ -64,9 +64,9 @@
         "away": "Aston Villa",
         "start": "2026-10-17T16:30:00Z",
         "odds": {
-          "Aston Villa": 3.0471428571428567,
-          "Newcastle United": 2.182857142857143,
-          "Draw": 3.69
+          "Aston Villa": 3.0385714285714287,
+          "Newcastle United": 2.1842857142857146,
+          "Draw": 3.7142857142857144
         }
       },
       {
@@ -77,9 +77,9 @@
         "away": "Sunderland",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Bournemouth": 2.0166666666666666,
-          "Sunderland": 3.5844444444444443,
-          "Draw": 3.598888888888889
+          "Bournemouth": 2.0277777777777777,
+          "Sunderland": 3.5744444444444445,
+          "Draw": 3.591111111111111
         }
       },
       {
@@ -90,9 +90,9 @@
         "away": "Crystal Palace",
         "start": "2026-10-18T13:00:00Z",
         "odds": {
-          "Brighton and Hove Albion": 1.567777777777778,
-          "Crystal Palace": 5.239999999999999,
-          "Draw": 4.4255555555555555
+          "Brighton and Hove Albion": 1.5622222222222222,
+          "Crystal Palace": 5.273333333333333,
+          "Draw": 4.4366666666666665
         }
       },
       {
@@ -116,9 +116,9 @@
         "away": "Arsenal",
         "start": "2026-10-18T15:30:00Z",
         "odds": {
-          "Arsenal": 1.5666666666666669,
-          "Nottingham Forest": 6.1,
-          "Draw": 3.968888888888889
+          "Arsenal": 1.5822222222222222,
+          "Nottingham Forest": 6.042222222222223,
+          "Draw": 3.9366666666666665
         }
       },
       {
@@ -142,9 +142,9 @@
         "away": "Nottingham Forest",
         "start": "2026-10-23T19:00:00Z",
         "odds": {
-          "Ipswich Town": 2.822,
-          "Nottingham Forest": 2.386,
-          "Draw": 3.472
+          "Ipswich Town": 2.948,
+          "Nottingham Forest": 2.29,
+          "Draw": 3.5060000000000002
         }
       },
       {
@@ -168,9 +168,9 @@
         "away": "Everton",
         "start": "2026-10-24T14:00:00Z",
         "odds": {
-          "Arsenal": 1.3679999999999999,
+          "Arsenal": 1.366,
           "Everton": 8.33,
-          "Draw": 4.7
+          "Draw": 4.720000000000001
         }
       },
       {
@@ -181,9 +181,9 @@
         "away": "Fulham",
         "start": "2026-10-24T14:00:00Z",
         "odds": {
-          "Coventry City": 2.894,
-          "Fulham": 2.312,
-          "Draw": 3.5380000000000003
+          "Coventry City": 2.8920000000000003,
+          "Fulham": 2.3099999999999996,
+          "Draw": 3.5420000000000003
         }
       },
       {
@@ -246,9 +246,9 @@
         "away": "Newcastle United",
         "start": "2026-10-25T14:00:00Z",
         "odds": {
-          "Crystal Palace": 2.5925,
+          "Crystal Palace": 2.59,
           "Newcastle United": 2.5475,
-          "Draw": 3.5775
+          "Draw": 3.5825
         }
       },
       {
