@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T19:47:51.842264+00:00",
+  "updated_at": "2026-11-11T06:34:55.131305+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,9 +12,9 @@
         "away": "Fulham",
         "start": "2026-11-21T12:30:00Z",
         "odds": {
-          "Fulham": 6.172222222222222,
-          "Manchester City": 1.4244444444444444,
-          "Draw": 4.844444444444445
+          "Fulham": 6.25,
+          "Manchester City": 1.422222222222222,
+          "Draw": 4.866666666666666
         }
       },
       {
@@ -104,7 +104,7 @@
         "start": "2026-11-22T14:00:00Z",
         "odds": {
           "Brighton and Hove Albion": 1.508888888888889,
-          "Hull City": 5.75,
+          "Hull City": 5.761111111111111,
           "Draw": 4.311111111111111
         }
       },
@@ -116,8 +116,8 @@
         "away": "Manchester United",
         "start": "2026-11-22T16:30:00Z",
         "odds": {
-          "Liverpool": 1.7077777777777776,
-          "Manchester United": 4.227777777777778,
+          "Liverpool": 1.7066666666666666,
+          "Manchester United": 4.238888888888889,
           "Draw": 4.055555555555555
         }
       },
@@ -129,8 +129,8 @@
         "away": "Everton",
         "start": "2026-11-23T20:00:00Z",
         "odds": {
-          "Brentford": 1.9988888888888887,
-          "Everton": 3.4355555555555557,
+          "Brentford": 2.0,
+          "Everton": 3.433333333333333,
           "Draw": 3.605555555555556
         }
       },
@@ -268,75 +268,120 @@
     "baseball": [],
     "basketball": [
       {
-        "id": "3689d555c9a1c81e3d300375b4c80530",
-        "league": "NBA",
-        "sport_key": "basketball_nba",
-        "home": "New York Knicks",
-        "away": "Milwaukee Bucks",
-        "start": "2026-11-11T00:40:00Z",
-        "odds": {
-          "Milwaukee Bucks": 7.77888888888889,
-          "New York Knicks": 1.0922222222222222
-        }
-      },
-      {
-        "id": "cfa503c66cd505776a910921875ef7dd",
-        "league": "NBA",
-        "sport_key": "basketball_nba",
-        "home": "Philadelphia 76ers",
-        "away": "Boston Celtics",
-        "start": "2026-11-11T01:10:00Z",
-        "odds": {
-          "Boston Celtics": 1.8255555555555556,
-          "Philadelphia 76ers": 2.0133333333333336
-        }
-      },
-      {
-        "id": "8178ff2ec61f604b61dfe6d7b8d71103",
-        "league": "NBA",
-        "sport_key": "basketball_nba",
-        "home": "Phoenix Suns",
-        "away": "Los Angeles Clippers",
-        "start": "2026-11-11T02:10:00Z",
-        "odds": {
-          "Los Angeles Clippers": 2.408888888888889,
-          "Phoenix Suns": 1.6022222222222224
-        }
-      },
-      {
-        "id": "9ac02cb22adf276b325b1e9c9c6c588e",
-        "league": "NBA",
-        "sport_key": "basketball_nba",
-        "home": "Utah Jazz",
-        "away": "Miami Heat",
-        "start": "2026-11-11T02:10:00Z",
-        "odds": {
-          "Miami Heat": 1.2366666666666666,
-          "Utah Jazz": 4.260000000000001
-        }
-      },
-      {
-        "id": "78ab42ddb22b68903fd53a384d0fc616",
-        "league": "NBA",
-        "sport_key": "basketball_nba",
-        "home": "Sacramento Kings",
-        "away": "Orlando Magic",
-        "start": "2026-11-11T03:10:00Z",
-        "odds": {
-          "Orlando Magic": 1.4066666666666667,
-          "Sacramento Kings": 3.0255555555555556
-        }
-      },
-      {
         "id": "f5477c781c94e09e85374bbf9149c0f1",
         "league": "NBA",
         "sport_key": "basketball_nba",
         "home": "Portland Trail Blazers",
         "away": "Oklahoma City Thunder",
-        "start": "2026-11-11T04:10:00Z",
+        "start": "2026-11-11T04:14:00Z",
+        "odds": {}
+      },
+      {
+        "id": "37f4c00ff7ec01d5aa7c33dd1ac84bbc",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Toronto Raptors",
+        "away": "Boston Celtics",
+        "start": "2026-11-12T00:10:00Z",
         "odds": {
-          "Oklahoma City Thunder": 1.7844444444444443,
-          "Portland Trail Blazers": 2.074444444444444
+          "Boston Celtics": 1.355,
+          "Toronto Raptors": 3.28125
+        }
+      },
+      {
+        "id": "095441822e3b9b1b84bff9e482b9057a",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "New York Knicks",
+        "away": "Cleveland Cavaliers",
+        "start": "2026-11-12T00:10:00Z",
+        "odds": {
+          "Cleveland Cavaliers": 2.42125,
+          "New York Knicks": 1.5925
+        }
+      },
+      {
+        "id": "e9545a3084389f5f3429e19fea891124",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Indiana Pacers",
+        "away": "Washington Wizards",
+        "start": "2026-11-12T00:10:00Z",
+        "odds": {
+          "Indiana Pacers": 1.615,
+          "Washington Wizards": 2.3625
+        }
+      },
+      {
+        "id": "e6a37eea1dddcbd0384c81237e81f47f",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "New Orleans Pelicans",
+        "away": "Brooklyn Nets",
+        "start": "2026-11-12T01:10:00Z",
+        "odds": {
+          "Brooklyn Nets": 2.56375,
+          "New Orleans Pelicans": 1.5375
+        }
+      },
+      {
+        "id": "8e0fdbf07b1f288b00ec5b370f6c1e2d",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Chicago Bulls",
+        "away": "San Antonio Spurs",
+        "start": "2026-11-12T01:10:00Z",
+        "odds": {
+          "Chicago Bulls": 8.4,
+          "San Antonio Spurs": 1.08125
+        }
+      },
+      {
+        "id": "21792501482fecfaacd3a4a24776c9e6",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Memphis Grizzlies",
+        "away": "Denver Nuggets",
+        "start": "2026-11-12T01:10:00Z",
+        "odds": {
+          "Denver Nuggets": 1.585,
+          "Memphis Grizzlies": 2.44
+        }
+      },
+      {
+        "id": "c04e54e9e028676cd8b23259bb4364ff",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Milwaukee Bucks",
+        "away": "Los Angeles Lakers",
+        "start": "2026-11-12T01:10:00Z",
+        "odds": {
+          "Los Angeles Lakers": 1.1637499999999998,
+          "Milwaukee Bucks": 5.43875
+        }
+      },
+      {
+        "id": "423255883d0e6c5d1a94a533b90e935b",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Utah Jazz",
+        "away": "Orlando Magic",
+        "start": "2026-11-12T02:10:00Z",
+        "odds": {
+          "Orlando Magic": 1.552857142857143,
+          "Utah Jazz": 2.5285714285714285
+        }
+      },
+      {
+        "id": "f41d186dc7a7dcf01adab32579a82ca3",
+        "league": "NBA",
+        "sport_key": "basketball_nba",
+        "home": "Houston Rockets",
+        "away": "Golden State Warriors",
+        "start": "2026-11-12T02:40:00Z",
+        "odds": {
+          "Golden State Warriors": 2.9225,
+          "Houston Rockets": 1.43
         }
       },
       {
