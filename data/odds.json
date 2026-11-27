@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T21:39:04.570893+00:00",
+  "updated_at": "2026-11-27T08:42:58.815829+00:00",
   "source": "The Odds API",
   "region": "us",
   "sports": {
@@ -12,9 +12,9 @@
         "away": "Chelsea",
         "start": "2026-11-27T20:00:00Z",
         "odds": {
-          "Chelsea": 2.7955555555555556,
-          "Nottingham Forest": 2.5122222222222224,
-          "Draw": 3.378888888888889
+          "Chelsea": 2.782222222222222,
+          "Nottingham Forest": 2.5566666666666666,
+          "Draw": 3.336666666666667
         }
       },
       {
@@ -25,9 +25,9 @@
         "away": "Brentford",
         "start": "2026-11-28T15:00:00Z",
         "odds": {
-          "Brentford": 3.2055555555555557,
-          "Manchester United": 2.1255555555555556,
-          "Draw": 3.724444444444444
+          "Brentford": 3.2066666666666666,
+          "Manchester United": 2.1199999999999997,
+          "Draw": 3.7277777777777774
         }
       },
       {
@@ -38,9 +38,9 @@
         "away": "Coventry City",
         "start": "2026-11-28T15:00:00Z",
         "odds": {
-          "Coventry City": 6.427777777777778,
-          "Leeds United": 1.4833333333333334,
-          "Draw": 4.514444444444444
+          "Coventry City": 6.413333333333333,
+          "Leeds United": 1.4777777777777779,
+          "Draw": 4.550000000000001
         }
       },
       {
@@ -51,9 +51,9 @@
         "away": "Aston Villa",
         "start": "2026-11-28T17:30:00Z",
         "odds": {
-          "Aston Villa": 1.948888888888889,
-          "Ipswich Town": 3.576666666666666,
-          "Draw": 3.8722222222222222
+          "Aston Villa": 1.97,
+          "Ipswich Town": 3.5255555555555556,
+          "Draw": 3.823333333333333
         }
       },
       {
@@ -64,8 +64,8 @@
         "away": "Liverpool",
         "start": "2026-11-29T12:00:00Z",
         "odds": {
-          "Everton": 4.411111111111111,
-          "Liverpool": 1.7755555555555556,
+          "Everton": 4.444444444444445,
+          "Liverpool": 1.77,
           "Draw": 3.7866666666666666
         }
       },
@@ -77,9 +77,9 @@
         "away": "Bournemouth",
         "start": "2026-11-29T14:05:00Z",
         "odds": {
-          "Bournemouth": 2.5555555555555554,
-          "Fulham": 2.7,
-          "Draw": 3.451111111111111
+          "Bournemouth": 2.488888888888889,
+          "Fulham": 2.7733333333333334,
+          "Draw": 3.448888888888889
         }
       },
       {
@@ -90,9 +90,9 @@
         "away": "Newcastle United",
         "start": "2026-11-29T14:05:00Z",
         "odds": {
-          "Brighton and Hove Albion": 1.5455555555555556,
-          "Newcastle United": 5.47111111111111,
-          "Draw": 4.477777777777778
+          "Brighton and Hove Albion": 1.558888888888889,
+          "Newcastle United": 5.337777777777777,
+          "Draw": 4.473333333333333
         }
       },
       {
@@ -103,9 +103,9 @@
         "away": "Hull City",
         "start": "2026-11-29T14:05:00Z",
         "odds": {
-          "Crystal Palace": 1.887777777777778,
+          "Crystal Palace": 1.8866666666666667,
           "Hull City": 3.9000000000000004,
-          "Draw": 3.7544444444444443
+          "Draw": 3.755555555555555
         }
       },
       {
@@ -116,9 +116,9 @@
         "away": "Tottenham Hotspur",
         "start": "2026-11-29T14:05:00Z",
         "odds": {
-          "Sunderland": 3.711111111111111,
-          "Tottenham Hotspur": 2.05,
-          "Draw": 3.388888888888889
+          "Sunderland": 3.7211111111111115,
+          "Tottenham Hotspur": 2.0477777777777777,
+          "Draw": 3.3833333333333333
         }
       },
       {
@@ -129,9 +129,9 @@
         "away": "Manchester City",
         "start": "2026-11-29T16:30:00Z",
         "odds": {
-          "Arsenal": 1.9688888888888887,
-          "Manchester City": 3.6088888888888886,
-          "Draw": 3.7333333333333334
+          "Arsenal": 1.971111111111111,
+          "Manchester City": 3.6300000000000003,
+          "Draw": 3.7211111111111115
         }
       },
       {
@@ -143,8 +143,8 @@
         "start": "2026-12-01T20:00:00Z",
         "odds": {
           "Coventry City": 2.2528571428571427,
-          "Ipswich Town": 3.012857142857143,
-          "Draw": 3.5742857142857143
+          "Ipswich Town": 3.0157142857142856,
+          "Draw": 3.5714285714285716
         }
       },
       {
@@ -155,8 +155,8 @@
         "away": "Crystal Palace",
         "start": "2026-12-02T19:30:00Z",
         "odds": {
-          "Chelsea": 1.6314285714285715,
-          "Crystal Palace": 4.678571428571429,
+          "Chelsea": 1.6357142857142857,
+          "Crystal Palace": 4.685714285714285,
           "Draw": 4.337142857142857
         }
       },
@@ -168,9 +168,9 @@
         "away": "Nottingham Forest",
         "start": "2026-12-02T19:30:00Z",
         "odds": {
-          "Hull City": 4.057142857142857,
-          "Nottingham Forest": 1.874285714285714,
-          "Draw": 3.5614285714285714
+          "Hull City": 4.064285714285714,
+          "Nottingham Forest": 1.8728571428571428,
+          "Draw": 3.564285714285714
         }
       },
       {
@@ -207,9 +207,9 @@
         "away": "Arsenal",
         "start": "2026-12-02T20:15:00Z",
         "odds": {
-          "Arsenal": 1.8171428571428572,
-          "Brentford": 4.231428571428571,
-          "Draw": 3.744285714285714
+          "Arsenal": 1.812857142857143,
+          "Brentford": 4.217142857142857,
+          "Draw": 3.737142857142857
         }
       },
       {
@@ -220,9 +220,9 @@
         "away": "Everton",
         "start": "2026-12-02T20:15:00Z",
         "odds": {
-          "Aston Villa": 1.9914285714285713,
-          "Everton": 3.577142857142857,
-          "Draw": 3.61
+          "Aston Villa": 1.9885714285714287,
+          "Everton": 3.5799999999999996,
+          "Draw": 3.617142857142857
         }
       },
       {
@@ -259,8 +259,8 @@
         "away": "Fulham",
         "start": "2026-12-03T20:00:00Z",
         "odds": {
-          "Fulham": 4.05,
-          "Tottenham Hotspur": 1.842,
+          "Fulham": 4.069999999999999,
+          "Tottenham Hotspur": 1.8400000000000003,
           "Draw": 3.7
         }
       }
@@ -275,8 +275,8 @@
         "away": "Miami Heat",
         "start": "2026-11-28T00:10:00Z",
         "odds": {
-          "Miami Heat": 2.436,
-          "New York Knicks": 1.584
+          "Miami Heat": 2.47,
+          "New York Knicks": 1.5744444444444445
         }
       },
       {
@@ -287,8 +287,8 @@
         "away": "Brooklyn Nets",
         "start": "2026-11-28T00:40:00Z",
         "odds": {
-          "Brooklyn Nets": 3.716,
-          "Toronto Raptors": 1.29
+          "Brooklyn Nets": 3.4988888888888887,
+          "Toronto Raptors": 1.3211111111111111
         }
       },
       {
@@ -299,8 +299,8 @@
         "away": "Milwaukee Bucks",
         "start": "2026-11-28T00:40:00Z",
         "odds": {
-          "Detroit Pistons": 1.186,
-          "Milwaukee Bucks": 4.932
+          "Detroit Pistons": 1.26,
+          "Milwaukee Bucks": 4.0344444444444445
         }
       },
       {
@@ -311,8 +311,8 @@
         "away": "Philadelphia 76ers",
         "start": "2026-11-28T00:40:00Z",
         "odds": {
-          "Indiana Pacers": 2.352,
-          "Philadelphia 76ers": 1.6179999999999999
+          "Indiana Pacers": 2.3066666666666666,
+          "Philadelphia 76ers": 1.651111111111111
         }
       },
       {
@@ -323,8 +323,8 @@
         "away": "Atlanta Hawks",
         "start": "2026-11-28T01:10:00Z",
         "odds": {
-          "Atlanta Hawks": 4.164,
-          "Boston Celtics": 1.244
+          "Atlanta Hawks": 4.0377777777777775,
+          "Boston Celtics": 1.258888888888889
         }
       },
       {
@@ -335,8 +335,8 @@
         "away": "Memphis Grizzlies",
         "start": "2026-11-28T01:40:00Z",
         "odds": {
-          "Memphis Grizzlies": 2.274,
-          "Minnesota Timberwolves": 1.658
+          "Memphis Grizzlies": 2.391111111111111,
+          "Minnesota Timberwolves": 1.6066666666666667
         }
       },
       {
@@ -347,8 +347,8 @@
         "away": "Dallas Mavericks",
         "start": "2026-11-28T02:10:00Z",
         "odds": {
-          "Dallas Mavericks": 2.1719999999999997,
-          "Phoenix Suns": 1.716
+          "Dallas Mavericks": 2.1177777777777775,
+          "Phoenix Suns": 1.7533333333333332
         }
       },
       {
@@ -359,8 +359,8 @@
         "away": "Denver Nuggets",
         "start": "2026-11-28T02:40:00Z",
         "odds": {
-          "Denver Nuggets": 1.228,
-          "Utah Jazz": 4.3420000000000005
+          "Denver Nuggets": 1.2077777777777776,
+          "Utah Jazz": 4.658888888888889
         }
       },
       {
@@ -371,8 +371,8 @@
         "away": "Golden State Warriors",
         "start": "2026-11-28T02:40:00Z",
         "odds": {
-          "Golden State Warriors": 3.7619999999999996,
-          "Portland Trail Blazers": 1.286
+          "Golden State Warriors": 4.0055555555555555,
+          "Portland Trail Blazers": 1.2622222222222221
         }
       },
       {
@@ -383,8 +383,8 @@
         "away": "New Orleans Pelicans",
         "start": "2026-11-28T02:40:00Z",
         "odds": {
-          "Los Angeles Clippers": 1.624,
-          "New Orleans Pelicans": 2.332
+          "Los Angeles Clippers": 1.6533333333333333,
+          "New Orleans Pelicans": 2.2944444444444443
         }
       },
       {
@@ -395,8 +395,8 @@
         "away": "Los Angeles Lakers",
         "start": "2026-11-28T02:40:00Z",
         "odds": {
-          "Los Angeles Lakers": 2.7039999999999997,
-          "San Antonio Spurs": 1.486
+          "Los Angeles Lakers": 2.8377777777777777,
+          "San Antonio Spurs": 1.45
         }
       }
     ]
